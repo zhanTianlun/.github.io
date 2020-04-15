@@ -95,16 +95,37 @@
 
 
 
-  <meta name="description" content="种一棵树最好的时间是十年前，其次是现在">
-<meta property="og:type" content="website">
+  <meta name="description" content="定义  ​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。 ​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后">
+<meta property="og:type" content="article">
 <meta property="og:title" content="脚踏实地，仰望星空。">
-<meta property="og:url" content="https://zhantianlun.github.io/index.html">
+<meta property="og:url" content="https://zhantianlun.github.io/2020/04/15/【设计模式】享元模式/index.html">
 <meta property="og:site_name" content="脚踏实地，仰望星空。">
-<meta property="og:description" content="种一棵树最好的时间是十年前，其次是现在">
+<meta property="og:description" content="定义  ​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。 ​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408115419411.jpg">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408143418462.jpg">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408160700359.jpg">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408160841432.jpg">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408161245410.png">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408161258604.jpg">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
+<meta property="og:updated_time" content="2020-04-15T07:45:44.422Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="脚踏实地，仰望星空。">
-<meta name="twitter:description" content="种一棵树最好的时间是十年前，其次是现在">
+<meta name="twitter:description" content="定义  ​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。 ​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==">
 
 
 
@@ -114,7 +135,7 @@
 
   
   
-  <link rel="canonical" href="https://zhantianlun.github.io/">
+  <link rel="canonical" href="https://zhantianlun.github.io/2020/04/15/【设计模式】享元模式/">
 
 
 
@@ -124,7 +145,7 @@
   };
 </script>
 
-  <title>脚踏实地，仰望星空。</title>
+  <title> | 脚踏实地，仰望星空。</title>
   
 
 
@@ -172,8 +193,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,7 +235,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -319,9 +339,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -354,9 +374,7 @@
         
         
           <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/04/15/【设计模式】享元模式/" class="post-title-link" itemprop="url">未命名</a>
+
               
             
           </h1>
@@ -421,9 +439,7 @@
       
 
       
-        
-          
-            <ul>
+        <ul>
 <li><h1 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h1></li>
 </ul>
 <p>​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。</p>
@@ -493,13 +509,13 @@
 <p>​    1.关注内部，外部状态，关注线程安全问题。</p>
 <p>​    2.使系统，程序的逻辑复杂化。</p>
 
-          
-        
       
     </div>
 
     
 
+    
+      
     
 
     
@@ -519,231 +535,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhantianlun.github.io/2020/04/15/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="湛天伦">
-      <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="/images/avatar.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="脚踏实地，仰望星空。">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2020/04/15/hello-world/" class="post-title-link" itemprop="url">【项目总结】p2p项目个人总结</a>
-              
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2020-04-15 15:32:34" itemprop="dateCreated datePublished" datetime="2020-04-15T15:32:34+08:00">2020-04-15</time>
-            </span>
-          
-
-          
-
-          
-
-          
+              <a href="/2020/04/15/hello-world/" rel="next" title="【项目总结】p2p项目个人总结">
+                <i class="fa fa-chevron-left"></i> 【项目总结】p2p项目个人总结
+              </a>
             
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-          
-
-          
-          
-
-          
-
-          
-
-          <br>
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="1-p2p项目分几个部分-3天实现了哪些功能"><a href="#1-p2p项目分几个部分-3天实现了哪些功能" class="headerlink" title="1.p2p项目分几个部分?3天实现了哪些功能?"></a>1.p2p项目分几个部分?3天实现了哪些功能?</h2><h3 id="后台页面的登录与退出"><a href="#后台页面的登录与退出" class="headerlink" title="(后台页面的登录与退出:)"></a>(后台页面的登录与退出:)</h3><h4 id="a-后台管理的登录"><a href="#a-后台管理的登录" class="headerlink" title="a.后台管理的登录"></a>a.后台管理的登录</h4><p>​        1.创建包结构,导入jar包,导入从c3p0文件,修改c3p0的配置</p>
-<p>​        2.将html文件转换成jsp文件,修改jsp页面中的配置路径</p>
-<p>​        3.编写创建servlet文件,service文件和dao文件</p>
-<p>​        4.创建user类和user表相对应</p>
-<p>​        5.在servlet中获取请求方式,创建一个login方法</p>
-<p>​        6.在login方法中接受用户名和密码</p>
-<p>​        7.进行非空校验,如果为空,页面重定向</p>
-<p>​        8.调用service层,编写login方法,传入用户名和密码的参数</p>
-<p>​        9.创建jdbcutils工具</p>
-<p>​        10.调用dao层,连接数据库根据用户名和密码查询user,将得到user结果返回</p>
-<p>​        11.判断user是否为空,将数据存到request,页面跳转或者重定向</p>
-<p>​        12.在login.jsp显示存入的错误信息</p>
-<h4 id="b-登录的过滤"><a href="#b-登录的过滤" class="headerlink" title="b.登录的过滤"></a>b.登录的过滤</h4><p>​        1.把home.jsp文件放到views路径下</p>
-<p>​        2.创建index.jsp文件</p>
-<p>​        3.创建一个filter过滤器</p>
-<p>​        4.在过滤器中获取session中的user</p>
-<p>​        5.判断user是否为空,为空表示未登录,页面重定向</p>
-<p>​        6.不为空表示已登录,放行</p>
-<p>​        7.在xml中配置filter</p>
-<h4 id="c-用户退出"><a href="#c-用户退出" class="headerlink" title="c.用户退出"></a>c.用户退出</h4><p>​        1.在退出按钮前面添加显示user的名称</p>
-<p>​        2.在home.jsp中给按钮标签添href属性传入参数method=logout,添加onclick事件</p>
-<p>​        3.在userservlet中接受method参数,编写logout方法</p>
-<p>​        4.在logout方法中销毁session,然后页面重定向</p>
-<h3 id="产品的增加与修改"><a href="#产品的增加与修改" class="headerlink" title="(产品的增加与修改:)"></a>(产品的增加与修改:)</h3><h4 id="d-产品的查询"><a href="#d-产品的查询" class="headerlink" title="d.产品的查询"></a>d.产品的查询</h4><p>​        1.创建product类,与表相对应</p>
-<p>​        2.创建home.js,在home.jsp导入js</p>
-<p>​        3.在home.js中编写查询所有产品的函数,页面加载完成后执行函数</p>
-<p>​        4.在函数中,向服务器发送请求,传入method参数</p>
-<p>​        5.编写productservlet页面</p>
-<p>​        6.接受method参数,执行查询所有的方法</p>
-<p>​        7.在方法中,调用service层,执行查询的方法,返回一个list集合</p>
-<p>​        8.在service中调用dao层</p>
-<p>​        9.在DAO层中,查询数据库,将结果以list集合形式返回</p>
-<p>​        10.在js页面接受返回的list集合！</p>
-<p>​        11.编写展示产品信息的js代码</p>
-<h4 id="e-产品的添加-之查询产品信息"><a href="#e-产品的添加-之查询产品信息" class="headerlink" title="e.产品的添加,之查询产品信息"></a>e.产品的添加,之查询产品信息</h4><p>​        1.给新增产品按钮添加click事件,绑定添加产品的函数</p>
-<p>​        2.copy代码,在函数中弹出添加产品的层</p>
-<p>​        3.在函数中,给弹出层的表格添加click事件</p>
-<p>​        4.在click事件中调用serialize方法封装表格中的数据</p>
-<p>​        5.向服务器发送请求</p>
-<p>​        6.在servlet中接受请求方式,编写add的方法</p>
-<p>​        7.在add方法中,创建product对象</p>
-<p>​        8.使用beanutils封装数据到product对象</p>
-<p>​        9.调用service层执行添加产品的方法</p>
-<p>​        10.调用dao层,连接数据库向product表中插入数据</p>
-<h4 id="f-产品的修改-先查询产品信息-展示到弹出层"><a href="#f-产品的修改-先查询产品信息-展示到弹出层" class="headerlink" title="f.产品的修改,先查询产品信息,展示到弹出层"></a>f.产品的修改,先查询产品信息,展示到弹出层</h4><p>​        1.给编辑的a标签添加click事件,绑定修改产品的函数</p>
-<p>​        2.在函数中,先修改弹出的层标题和按钮</p>
-<p>​        3.在函数中,根据点击编辑的id,向服务器发送请求,传入id和根据id查产品采的方法参数</p>
-<p>​        4.接受method参数,执行根据id查询的方法</p>
-<p>​        5.调用service层,调用dao层查询产品信息,将数据返回</p>
-<p>​        6.给弹出层的每个input添加id,将返回的数据显示在input中</p>
-<p>​        7.在添加产品的函数中将input中的内容清空</p>
-<p>​        8.给修改按钮绑定click事件,点击按钮,触发函数</p>
-<p>​        9.在函数中将input中的内容封装打包,携带id的参数</p>
-<p>​        10.向服务器发送请求,传入参数,method=editproduct</p>
-<p>​        11.在servlet中接受参数,创建product对象,使用beautils工具封装数据到product对象中</p>
-<p>​        12.调用service和dao层,编写editproduct方法</p>
-<p>​        13.在修改按钮绑定的函数中,先将弹出层关闭</p>
-<p>​        14.重新执行查询所有产品的函数,产品信息改变说明产品信息修改成功</p>
-<h4 id="g-一些BUG的修改"><a href="#g-一些BUG的修改" class="headerlink" title="g.一些BUG的修改"></a>g.一些BUG的修改</h4><p>​            1.在新增产品的按钮绑定点击事件之间先解绑</p>
-<p>​            2.在编辑按钮绑定点击事件之间先解绑</p>
-<h3 id="前台页面的登录"><a href="#前台页面的登录" class="headerlink" title="(前台页面的登录:)"></a>(前台页面的登录:)</h3><h4 id="a-验证码的显示与点击切换"><a href="#a-验证码的显示与点击切换" class="headerlink" title="a.验证码的显示与点击切换"></a>a.验证码的显示与点击切换</h4><p>​        1.复制文件到utils里面,配置servlet</p>
-<p>​        2.在login.html验证码的后面添加img标签和href属性,取一个id</p>
-<p>​        3.在img标签里面添加click函数</p>
-<p>​        4.在customer.js里面编写函数,导入js</p>
-<p>​        5.取到id然后attr设置src属性</p>
-<h4 id="b-点击立即登录按钮-进行登录"><a href="#b-点击立即登录按钮-进行登录" class="headerlink" title="b.点击立即登录按钮,进行登录"></a>b.点击立即登录按钮,进行登录</h4><p>​        1.在input框里添加name属性,给按钮注册onclick事件</p>
-<p>​        2.在js页面,编写login函数</p>
-<p>​        3.把输入框的数据封装在json里面</p>
-<p>​        4.向服务器发送请求</p>
-<h4 id="c-servlet里面的登录操作"><a href="#c-servlet里面的登录操作" class="headerlink" title="c.servlet里面的登录操作"></a>c.servlet里面的登录操作</h4><p>​        1.接受三个参数<br>​        2.判断验证码<br>​        2.1从session中取到checkcode<br>​        2.2判断两个checkcode<br>​        3.调用service层,执行login方法<br>​        4.创建customer对象<br>​        5.把customer对象存入到session中<br>​        6.判读是不是空<br>​        7.创建jsonResout对象 </p>
-<p>​        8.设置type和error,并写会到浏览器</p>
-<h4 id="d-用户输入邮箱也可以登录"><a href="#d-用户输入邮箱也可以登录" class="headerlink" title="d.用户输入邮箱也可以登录"></a>d.用户输入邮箱也可以登录</h4><p>​        1.在掉serivce层之前判断录入的是不是邮箱的正则<br>​        2.如果是的,调用findbyemail方法,查到用户对象<br>​        3.把c_name设置成c.getc_name;<br>​        4.导入StringUtils文件<br>​        5.在添加表数据和登录的时候,调用stringUtils的MD5方法加密文件<br>​        6.在数据库中也对密码进行加密</p>
-<p>​        7.设置password的字段为50</p>
-<p>​        </p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -753,14 +566,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -780,8 +594,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -872,6 +695,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#应用场景"><span class="nav-number">2.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#例子"><span class="nav-number">3.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#享元模式在源码中的应用"><span class="nav-number">4.</span> <span class="nav-text">享元模式在源码中的应用</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -997,6 +837,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
+
+
 
   <script src="/js/next-boot.js?v=7.2.0"></script>
 
@@ -1010,6 +854,8 @@
 
   
 
+
+  
 
 
   
