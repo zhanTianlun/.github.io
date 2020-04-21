@@ -79,7 +79,7 @@ footer:
     enable: false
     icp:
     
-  #Í³¼Æ
+  #Í³ï¿½ï¿½
   counter: true
 
 # Creative Commons 4.0 International License.
@@ -87,7 +87,7 @@ footer:
 # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-# °æÈ¨
+# ï¿½ï¿½È¨
 creative_commons:
   license: by-nc-sa
   sidebar: true
@@ -204,7 +204,7 @@ social:
   #YouTube: https://www.youtube.com/channel/UCvdQ0ySJSfIcDM_KfMQrKbw || youtube
   #Instagram: https://instagram.com/zhantianlun || instagram
   #Skype: skype:yourname?call|chat || skype
-  #zhihu: https://www.zhihu.com/people/zhan-tian-lun || Öªºõ
+  #zhihu: https://www.zhihu.com/people/zhan-tian-lun || Öªï¿½ï¿½
   
 social_icons:
   enable: true
@@ -627,16 +627,16 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # More info available at https://valine.js.org
 valine:
-  enable: false # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
-  appid: # Your leancloud application appid
-  appkey: # Your leancloud application appkey
+  enable: true # When enable is set to be true, leancloud_visitors is recommended to be closed for the re-initialization problem within different leancloud adk version
+  appid: 7U5N7OiuvUhUVIUrfyuttSml-gzGzoHsz # Your leancloud application appid
+  appkey: EltMchaRROpDhFknkOJc9GbA # Your leancloud application appkey
   notify: false # Mail notifier. See: https://github.com/xCss/Valine/wiki
   verify: false # Verification code
-  placeholder: Just go go # Comment box placeholder
+  placeholder: å¿«æ¥è¯„è®ºä¸€ä¸ªå§~ # Comment box placeholder
   avatar: mm # Gravatar style
   guest_info: nick,mail,link # Custom comment header
   pageSize: 10 # Pagination size
-  language: # Language, available values: en, zh-cn
+  language: zh-cn # Language, available values: en, zh-cn
   visitor: false # leancloud-counter-security is not supported for now. When visitor is set to be true, appid and appkey are recommended to be the same as leancloud_visitors' for counter compatibility. Article reading statistic https://valine.js.org/visitor.html
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
 
@@ -799,11 +799,11 @@ firestore:
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
   enable: true
-  total_visitors: true #Í³¼Æ·Ã¿ÍÊı
+  total_visitors: true #Í³ï¿½Æ·Ã¿ï¿½ï¿½ï¿½
   total_visitors_icon: user
-  total_views: true #Í³¼Æ·ÃÎÊÊı
+  total_views: true #Í³ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½
   total_views_icon: eye
-  post_views: true #Í³¼ÆÎÄÕÂÔÄ¶ÁÊı
+  post_views: true #Í³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
   post_views_icon: eye
 
  # count values only if the other configs are false
