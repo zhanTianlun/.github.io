@@ -220,8 +220,8 @@ avatar:
   # In theme directory (source/images): /images/avatar.png
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  # url: /images/me.png
-  url£ºhttps://wx4.sinaimg.cn/mw690/81f87b78ly1ge0dvdyndhj20u01407wk.jpg
+  #url: /images/avatar.png
+  url: https://wx4.sinaimg.cn/mw690/81f87b78ly1ge0dvdyndhj20u01407wk.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # If true, the avatar would be rotated with the cursor.
