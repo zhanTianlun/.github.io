@@ -158,6 +158,7 @@ menu:
   archives: /archives/ || archive
   categories: /categories/ || th
   tags: /tags/ || tags
+  
   #about: /about/ || user
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
@@ -322,7 +323,7 @@ symbols_count_time:
   item_text_post: true
   item_text_total: true
   awl: 4
-  wpm: 275
+  wpm: 200
   suffix: mins.
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
