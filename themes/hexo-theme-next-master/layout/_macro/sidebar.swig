@@ -157,9 +157,9 @@
               </div>
               <ul class="links-of-blogroll-list">
                 {% for blogrollText, blogrollURL in theme.links %}
-                  <li class="links-of-blogroll-item">
+                  <span class="links-of-blogroll-item">
                     {{ next_url(blogrollURL, blogrollText, {title: blogrollURL}) }}
-                  </li>
+                  </span>
                 {% endfor %}
               </ul>
             </div>

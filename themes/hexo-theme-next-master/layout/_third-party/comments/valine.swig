@@ -1,4 +1,4 @@
-{% set valine_uri = '//unpkg.com/valine/dist/Valine.min.js' %}
+{% set valine_uri = '//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js' %}
 {% if theme.vendors.valine %}
   {% set valine_uri = theme.vendors.valine %}
 {% endif %}
