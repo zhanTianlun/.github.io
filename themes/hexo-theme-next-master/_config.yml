@@ -47,7 +47,7 @@ rss:
 
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
-  since: 2019
+  since: 2018
 
   # Icon between year and copyright info.
   icon:
@@ -78,21 +78,25 @@ footer:
   beian:
     enable: false
     icp:
+    
+  #统计
+  counter: true
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
 # Available values of license: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
 # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
 # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
+# 版权
 creative_commons:
   license: by-nc-sa
-  sidebar: false
-  post: false
+  sidebar: true
+  post: true
   language:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
+  enable: true
   permalink: https://github.com/zhantianlun
   title: Follow me on GitHub
 
@@ -153,8 +157,8 @@ menu:
   home: / || home
   archives: /archives/ || archive
   tags: /tags/ || tags
-  categories: /categories/ || th
-  about: /about/ || user
+  #categories: /categories/ || th
+  #about: /about/ || user
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -295,8 +299,8 @@ excerpt_description: true
 # Automatically Excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
-  length: 150
+  enable: true
+  length: 250
 
 # Read more button
 # If true, the read more button would be displayed in excerpt section.
@@ -319,6 +323,7 @@ symbols_count_time:
   item_text_total: true
   awl: 4
   wpm: 275
+  suffix: mins.
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
 tag_icon: false
@@ -793,16 +798,16 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
 busuanzi_count:
- # enable: false
- # total_visitors: true
- # total_visitors_icon: user
- # total_views: true
- # total_views_icon: eye
- # post_views: true
- # post_views_icon: eye
+  enable: true
+  total_visitors: true #统计访客数
+  total_visitors_icon: user
+  total_views: true #统计访问数
+  total_views_icon: eye
+  post_views: true #统计文章阅读数
+  post_views_icon: eye
 
  # count values only if the other configs are false
-  enable: true
+  #enable: true
   # custom uv span for the whole site
   site_uv: true
   site_uv_header: <i class="fa fa-user"></i>
