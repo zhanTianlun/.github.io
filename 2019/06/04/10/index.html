@@ -95,22 +95,25 @@
 
 
 
-  <meta name="description" content="定义​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  1234567">
+  <meta name="description" content="定义​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。 ​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后通过不">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【设计模式】装饰器模式">
-<meta property="og:url" content="https://zhantianlun.github.io/2019/06/03/9/index.html">
+<meta property="og:title" content="【设计模式】享元模式">
+<meta property="og:url" content="https://zhantianlun.github.io/2019/06/04/10/index.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="定义​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  1234567">
+<meta property="og:description" content="定义​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。 ​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后通过不">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200403151618230.jpg">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200403153005239.jpg">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200403153915766.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2020-04-22T07:32:09.138Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408115419411.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408143418462.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408160700359.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408160841432.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408161245410.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200408161258604.jpg">
+<meta property="og:updated_time" content="2020-04-22T08:09:54.546Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【设计模式】装饰器模式">
-<meta name="twitter:description" content="定义​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  1234567">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200403151618230.jpg">
+<meta name="twitter:title" content="【设计模式】享元模式">
+<meta name="twitter:description" content="定义​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。 ​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后通过不">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200408115419411.jpg">
 
 
 
@@ -118,7 +121,7 @@
 
   
   
-  <link rel="canonical" href="https://zhantianlun.github.io/2019/06/03/9/">
+  <link rel="canonical" href="https://zhantianlun.github.io/2019/06/04/10/">
 
 
 
@@ -128,7 +131,7 @@
   };
 </script>
 
-  <title>【设计模式】装饰器模式 | 成事在人</title>
+  <title>【设计模式】享元模式 | 成事在人</title>
   
 
 
@@ -359,7 +362,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhantianlun.github.io/2019/06/03/9/">
+    <link itemprop="mainEntityOfPage" href="https://zhantianlun.github.io/2019/06/04/10/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
@@ -376,7 +379,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【设计模式】装饰器模式
+          <h1 class="post-title" itemprop="name headline">【设计模式】享元模式
 
               
             
@@ -402,7 +405,7 @@
                 
               
 
-              <time title="创建时间：2019-06-03 15:23:59" itemprop="dateCreated datePublished" datetime="2019-06-03T15:23:59+08:00">2019-06-03</time>
+              <time title="创建时间：2019-06-04 15:32:23" itemprop="dateCreated datePublished" datetime="2019-06-04T15:32:23+08:00">2019-06-04</time>
             </span>
           
 
@@ -417,7 +420,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2020-04-22 15:32:09" itemprop="dateModified" datetime="2020-04-22T15:32:09+08:00">2020-04-22</time>
+                <time title="修改时间：2020-04-22 16:09:54" itemprop="dateModified" datetime="2020-04-22T16:09:54+08:00">2020-04-22</time>
               </span>
             
           
@@ -449,8 +452,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/06/03/9/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/03/9/" itemprop="commentCount"></span>
+                <a href="/2019/06/04/10/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/04/10/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -480,7 +483,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">4.2k</span>
+              <span title="本文字数">3.1k</span>
             </span>
           
 
@@ -492,7 +495,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span title="阅读时长">6 分钟</span>
+              <span title="阅读时长">4 分钟</span>
             </span>
           
 
@@ -511,89 +514,71 @@
       
 
       
-        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。</p>
-<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。</p>
+        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。</p>
+<p>​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后通过不变的部分，达到减少对象数量并减少内存的目的。</p>
+<h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5><p>​    当系统中的多处需要一组信息，可以把这些信息封装到一个对象中，然后对对象进行缓存，这样，一个对象就可以提供给对多处访问。避免了多次使用同时创建对象，造成内存的消耗，影响性能。</p>
+<p>​    享元模式其实就是工厂模式的一个改进机制，享元模式同样要求创建一个或一组对象，就是通过工厂方法生成对象的，只不过享元模式为工厂创建了一个缓存的功能。主要总结为一下的应用场景。</p>
 <ol>
-<li>创建煎饼果子类。提供getName和getPrice方法。</li>
+<li>常常应用于系统底层的开发，以便解决系统的性能。</li>
+<li>系统有大量的相似对象，需要缓冲池的场景。</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"煎饼"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">5</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在生活中的享元模式也很常见，比如各种中介和全国联网的医保。</p>
+<h5 id="例子"><a href="#例子" class="headerlink" title="例子"></a>例子</h5><p>​    生活中肯定会遇到要抢火车篇的情况。那些刷票软件实际上是将我们的信息保存下来，然后定时地去余票里面查询有没有自己需要的余票。假如一张火车票包含出发站，终点站，席次 的信息。然后这里写一个程序利用这些信息去查询有没有余票。</p>
+<ol>
+<li>创建ITicket接口，提供一个showInfo方法，传入席次信息</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ITicket</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">showInfo</span><span class="params">(String trunk)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ol start="2">
-<li>觉得不够吃，想加一个鸡蛋。创建一个类BattarCakeWithOneEgg继承BatterCake类，重写getName和getPrice方法。</li>
+<li>创建具体的TIcket类，继承ITicket接口，创建出发站，终点站和价格三个属性，重写showInfo方法，返回票的信息。</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BattarCakeWithOneEgg</span> <span class="keyword">extends</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getName() + <span class="string">"加一个鸡蛋"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getPrice() + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Ticket</span> <span class="keyword">implements</span> <span class="title">ITicket</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String from;</span><br><span class="line">    <span class="keyword">private</span> String to;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> price;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Ticket</span><span class="params">(String from, String to)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.from = from;</span><br><span class="line">        <span class="keyword">this</span>.to = to;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">showInfo</span><span class="params">(String trunk)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.price = <span class="keyword">new</span> Random().nextInt(<span class="number">500</span>);</span><br><span class="line">        System.out.println(String.format(<span class="string">"%s-&gt;%s:%s 价格：%s 元"</span>, <span class="keyword">this</span>.from, <span class="keyword">this</span>.to, trunk, <span class="keyword">this</span>.price));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ol start="3">
-<li>还是觉得不够吃，想再加一个香肠。创建一个类继续继承BattarCakeWithOneEgg，重写getName和getPrice方法。</li>
+<li>创建一个ticket工厂，提供静态的查询余票的方法，返回ITicket的抽象。</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCakeWithOneEggOneSausage</span> <span class="keyword">extends</span> <span class="title">BattarCakeWithOneEgg</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getName() + <span class="string">"加一个香肠"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getPrice() + <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TicketFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ITicket <span class="title">queryTicket</span><span class="params">(String from, String to)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Ticket(from, to);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ol start="4">
 <li>测试代码。</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//想吃煎饼果子</span></span><br><span class="line">        BatterCake batterCake = <span class="keyword">new</span> BatterCake();</span><br><span class="line">        System.out.println(batterCake.getName() + <span class="string">",价格:"</span> + batterCake.getPrice());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//想再加一个鸡蛋</span></span><br><span class="line">        BattarCakeWithOneEgg battarCakeWithOneEgg = <span class="keyword">new</span> BattarCakeWithOneEgg();</span><br><span class="line">        System.out.println(battarCakeWithOneEgg.getName() + <span class="string">",价格："</span> + battarCakeWithOneEgg.getPrice());</span><br><span class="line"></span><br><span class="line">        <span class="comment">//想再加一个鸡蛋一个香肠</span></span><br><span class="line">        BatterCakeWithOneEggOneSausage batterCakeWithOneEggOneSausage = <span class="keyword">new</span> BatterCakeWithOneEggOneSausage();</span><br><span class="line">        System.out.println(batterCakeWithOneEggOneSausage.getName() + <span class="string">",价格："</span> + batterCakeWithOneEggOneSausage.getPrice());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ITicket iTicket = TicketFactory.queryTicket(<span class="string">"杭州东"</span>, <span class="string">"汉口"</span>);</span><br><span class="line">        iTicket.showInfo(<span class="string">"硬座"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ol start="5">
-<li>看看结果。</li>
+<li>查看结果。</li>
 </ol>
-<p><img src="https://img-blog.csdnimg.cn/20200403151618230.jpg" alt></p>
-<pre><code>这个时候，如果我想再一个鸡蛋。就需要继续继承BatterCakeWithOneEggOneSausage 这个类。想再加，就必须再继承。</code></pre><p>​    这样不停的定制，显然是不科学的做法。</p>
-<p>   下面就用装饰器模式来改造下这个代码。</p>
-<ol>
-<li>创建一个抽象的煎饼对象，提供getName和getPrice方法。</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> String <span class="title">getName</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>创建一个基础的煎饼果子类（基础套餐）</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BaseBatterCake</span> <span class="keyword">extends</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"煎饼"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">5</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>创建一个煎饼果子基础套餐的装饰器，将抽象的BatterCake类以静态代理的方式注入到BatterCakeDecorator 的构造方法中，然后调用它的getName和getPrice的方法。</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCakeDecorator</span> <span class="keyword">extends</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> BatterCake batterCake;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BatterCakeDecorator</span><span class="params">(BatterCake batterCake)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.batterCake = batterCake;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> batterCake.getName();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> batterCake.getPrice();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="4">
-<li>创建一个加了鸡蛋的煎饼果子套餐，继承BatterCake，在构造方法中注入BatterCake，然后重写getName和getPrice的方法。</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCakeEggDecorator</span> <span class="keyword">extends</span> <span class="title">BatterCakeDecorator</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BatterCakeEggDecorator</span><span class="params">(BatterCake batterCake)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(batterCake);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getName() + <span class="string">"加一个鸡蛋"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getPrice() + <span class="number">1</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>创建一个加香肠的煎饼果子套餐，同样继承BatterCake，在构造方法中注入BatterCake，然后重写getName和getPrice的方法。</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCakeSausageDecorator</span> <span class="keyword">extends</span> <span class="title">BatterCakeDecorator</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">BatterCakeSausageDecorator</span><span class="params">(BatterCake batterCake)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>(batterCake);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getName() + <span class="string">"加一个香肠"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">super</span>.getPrice() + <span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<p><img src="https://img-blog.csdnimg.cn/20200408115419411.jpg" alt></p>
+<p>​    但是这样的写法其实也是每次去查询都创建了一个新的对象，那么其实可以改造一下。</p>
 <ol start="6">
-<li>测试。</li>
+<li>改造TicketFactory工厂类，增加缓存机制，创建一个map容器保存对象，不存在才会去创建对象，存在就直接返回该对象。</li>
 </ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        BatterCake batterCake;</span><br><span class="line">        <span class="comment">//点一个基础套餐</span></span><br><span class="line">        batterCake = <span class="keyword">new</span> BaseBatterCake();</span><br><span class="line">        <span class="comment">//加一个鸡蛋</span></span><br><span class="line">        batterCake = <span class="keyword">new</span> BatterCakeEggDecorator(batterCake);</span><br><span class="line">        <span class="comment">//加一个香肠</span></span><br><span class="line">        batterCake = <span class="keyword">new</span> BatterCakeSausageDecorator(batterCake);</span><br><span class="line">        <span class="comment">//再加一个香肠</span></span><br><span class="line">        batterCake = <span class="keyword">new</span> BatterCakeSausageDecorator(batterCake);</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"买了"</span> + batterCake.getName() + <span class="string">",一共花了"</span> + batterCake.getPrice() + <span class="string">"元钱"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.concurrent.ConcurrentHashMap;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TicketFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> Map&lt;String, ITicket&gt; sticketPool = <span class="keyword">new</span> ConcurrentHashMap&lt;&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> ITicket <span class="title">queryTicket</span><span class="params">(String from, String to)</span> </span>&#123;</span><br><span class="line">        String key = from + <span class="string">"-&gt;"</span> + to;</span><br><span class="line">        <span class="keyword">if</span> (sticketPool.containsKey(key)) &#123;</span><br><span class="line">            System.out.println(<span class="string">"使用缓存: "</span> + key);</span><br><span class="line">            <span class="keyword">return</span> TicketFactory.sticketPool.get(key);</span><br><span class="line">        &#125;</span><br><span class="line">        System.out.println(<span class="string">"首次查询，创建对象："</span> + key);</span><br><span class="line">        ITicket iTicket = <span class="keyword">new</span> Ticket(from, to);</span><br><span class="line">        TicketFactory.sticketPool.put(key,iTicket);</span><br><span class="line">        <span class="keyword">return</span> iTicket;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <ol start="7">
-<li><p>查看结果。</p>
-<p><img src="https://img-blog.csdnimg.cn/20200403153005239.jpg" alt></p>
-</li>
-<li><p>看一下类图。</p>
-</li>
+<li>重写测试方法。</li>
 </ol>
-<p><img src="https://img-blog.csdnimg.cn/20200403153915766.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70" alt></p>
-<p>​    这里的BatterCake就是一个抽象的组件，它充当了被装饰的原始对象，规定了被装饰对象的行为。BaseBatterCake就是具体组件，他是实现或者继承抽象组件的一个具体对象，也就是被装饰对象。BatterCakeDecorator就是通用的装饰器，它的内部必然有一个属性指向抽象的组件。它的实现一般是一个抽象类，主要是为了让它的子类按照其构造形式传入一个抽象的组件，这是强制的通用行为。而如果系统中的装饰逻辑比较的单一，并不需要许多的装饰器，那么就可以直接省略这个类，直接实现一个具体的装饰器就可以。而下面的 BatterCakeEggDecorator 和 BatterCakeSausageDecorator 就是具体的装饰器对象。理论上，每一个对象都扩展了BaseBatterCake的功能。</p>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p> 装饰器模式角色分配符合设计模式的里氏替换原则，依赖倒置原则，从而使得它具备很强的扩展性，最终满足开闭原则。</p>
-<ol>
-<li>装饰器模式和代理模式的对比</li>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ITicket iTicket = TicketFactory.queryTicket(<span class="string">"孝感东"</span>,<span class="string">"汉口"</span>);</span><br><span class="line">        iTicket.showInfo(<span class="string">"上铺"</span>);</span><br><span class="line">        iTicket = TicketFactory.queryTicket(<span class="string">"孝感东"</span>,<span class="string">"汉口"</span>);</span><br><span class="line">        iTicket.showInfo(<span class="string">"上铺"</span>);</span><br><span class="line">        iTicket = TicketFactory.queryTicket(<span class="string">"杭州东"</span>,<span class="string">"汉口"</span>);</span><br><span class="line">        iTicket.showInfo(<span class="string">"中铺"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>查看新的测试结果。</li>
 </ol>
-<p>​     装饰器更强调对被装饰对象自身的扩展，而代理模式更强调代理对象的功能增强。</p>
-<ol start="2">
-<li>代理模式的优点</li>
-</ol>
-<p>​    （1）.是继承的有力补充，比继承灵活，不改变原有对象的情况下动态地给一个对象扩展功能，即插即用。</p>
-<p>​    （2）.可以通过构造不同的装饰类，对这些类进行排列组合，实现不同的效果。</p>
-<p>​    （3）.装饰器模式完全遵循开闭原则。</p>
-<ol start="3">
-<li>代理模式的缺点</li>
-</ol>
-<p>​    （1）.会出现很多的代码，出现更多的类，增加了系统的复杂度。</p>
-<p>​    （2）.动态装饰时，多层装饰会比较复杂。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200408143418462.jpg" alt></p>
+<h5 id="享元模式在源码中的应用"><a href="#享元模式在源码中的应用" class="headerlink" title="享元模式在源码中的应用"></a>享元模式在源码中的应用</h5><p>​    来看看在Integer中，Integer是怎么将数据存在缓存中，然后从缓存中去取的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test1</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Integer a = Integer.valueOf(<span class="number">100</span>);</span><br><span class="line">        Integer b = <span class="number">100</span>;</span><br><span class="line"></span><br><span class="line">        Integer c = Integer.valueOf(<span class="number">1000</span>);</span><br><span class="line">        Integer d = <span class="number">1000</span>;</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"a==b:"</span> + (a == b));</span><br><span class="line">        System.out.println(<span class="string">"c==d:"</span> + (c == d));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>​    运行上面的代码，可以看到，a和b是相等的，c和d是不相等的。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200408160700359.jpg" alt></p>
+<p>​    这是为什么呢，这里点开Integer的valueOf方法去看看。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200408160841432.jpg" alt></p>
+<p>​    可以看到，如果传入的i值大于等于IntegerCache.low或者小于等于IntegerCache.high，那么就会从cha么就会从cache缓存里面取，如果不是的话就新建一个Integer对象。而IntegerCache.low的值是-128，IntegerCache.high的值是127。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200408161245410.png" alt></p>
+<p><img src="https://img-blog.csdnimg.cn/20200408161258604.jpg" alt></p>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>享元模式的优点：</p>
+<p>​    1.减少对象的创建，降低内存中对象的数量，降低系统中的内存，提高效率。</p>
+<p>​    2.减少内存之外的其他资源的占用。</p>
+<p>享元模式的缺点：</p>
+<p>​    1.关注内部，外部状态，关注线程安全问题。</p>
+<p>​    2.使系统，程序的逻辑复杂化。</p>
 
       
     </div>
@@ -633,7 +618,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://zhantianlun.github.io/2019/06/03/9/" title="【设计模式】装饰器模式">https://zhantianlun.github.io/2019/06/03/9/</a>
+    <a href="https://zhantianlun.github.io/2019/06/04/10/" title="【设计模式】享元模式">https://zhantianlun.github.io/2019/06/04/10/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -662,8 +647,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/22/8/" rel="next" title="【设计模式】门面模式">
-                <i class="fa fa-chevron-left"></i> 【设计模式】门面模式
+              <a href="/2019/06/03/9/" rel="next" title="【设计模式】装饰器模式">
+                <i class="fa fa-chevron-left"></i> 【设计模式】装饰器模式
               </a>
             
           </div>
@@ -672,8 +657,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/04/10/" rel="prev" title="【设计模式】享元模式">
-                【设计模式】享元模式 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/01/11/" rel="prev" title="【Spring】用300行代码实现spring1.0版本（详细注释）">
+                【Spring】用300行代码实现spring1.0版本（详细注释） <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -863,7 +848,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#举例"><span class="nav-number">2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#应用场景"><span class="nav-number">2.</span> <span class="nav-text">应用场景</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#例子"><span class="nav-number">3.</span> <span class="nav-text">例子</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#享元模式在源码中的应用"><span class="nav-number">4.</span> <span class="nav-text">享元模式在源码中的应用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
