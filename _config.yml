@@ -82,7 +82,7 @@ deploy:
 #  repository: ztl@47.11.124.154:/home/fisher/blogit.git
 #  branch: master
 - type: git
-  repository: https://github.com/zhantianlun/.github.io.git
+  repository: git@github.com:zhantianlun/zhantianlun.github.io.git
   branch: master
   
 # Search
