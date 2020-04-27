@@ -81,9 +81,9 @@ deploy:
 - type: git
   repo: git@zhantianlun.com:/var/repo/hexo.git
   branch: master
-- type: git
-  repository: git@github.com:zhantianlun/zhantianlun.github.io.git
-  branch: master
+#- type: git
+#  repository: git@github.com:zhantianlun/zhantianlun.github.io.git
+#  branch: master
   
 # Search
 search:
