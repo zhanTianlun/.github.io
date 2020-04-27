@@ -78,9 +78,9 @@ theme: hexo-theme-next-master
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-#- type: git
-#  repo: git@zhantianlun.com:/var/repo/hexo.git
-#  branch: master
+- type: git
+  repo: git@zhantianlun.com:/var/repo/hexo.git
+  branch: master
 - type: git
   repository: git@github.com:zhantianlun/zhantianlun.github.io.git
   branch: master
