@@ -95,18 +95,18 @@
 
 
 
-  <meta name="description" content="定义​    工厂方法模式是指定义一个创建对象的接口，然后实现这个接口的工厂来决定创建什么样的实例。工厂方法让类的实例推迟到子类中进行。在这个模式中，只关心需要创建的是什么工厂，不需要关心创建的细节。而且新加入的产品符合开闭原则。 举例1.场景 ​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现工厂方法模式。 2.步骤 （1） 创建支付接口，里面定义抽象的支付方法。">
+  <meta name="description" content="定义​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。 举例1.1 场景​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【设计模式】工厂模式之工厂方法模式">
-<meta property="og:url" content="https://zhantianlun.com/2019/04/22/4.html">
+<meta property="og:title" content="【设计模式】工厂模式之抽象工厂模式">
+<meta property="og:url" content="https://zhantianlun.com/5.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="定义​    工厂方法模式是指定义一个创建对象的接口，然后实现这个接口的工厂来决定创建什么样的实例。工厂方法让类的实例推迟到子类中进行。在这个模式中，只关心需要创建的是什么工厂，不需要关心创建的细节。而且新加入的产品符合开闭原则。 举例1.场景 ​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现工厂方法模式。 2.步骤 （1） 创建支付接口，里面定义抽象的支付方法。">
+<meta property="og:description" content="定义​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。 举例1.1 场景​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-22T09:31:53.822Z">
+<meta property="og:updated_time" content="2020-04-22T06:33:24.021Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【设计模式】工厂模式之工厂方法模式">
-<meta name="twitter:description" content="定义​    工厂方法模式是指定义一个创建对象的接口，然后实现这个接口的工厂来决定创建什么样的实例。工厂方法让类的实例推迟到子类中进行。在这个模式中，只关心需要创建的是什么工厂，不需要关心创建的细节。而且新加入的产品符合开闭原则。 举例1.场景 ​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现工厂方法模式。 2.步骤 （1） 创建支付接口，里面定义抽象的支付方法。">
+<meta name="twitter:title" content="【设计模式】工厂模式之抽象工厂模式">
+<meta name="twitter:description" content="定义​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。 举例1.1 场景​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设">
 
 
 
@@ -114,7 +114,7 @@
 
   
   
-  <link rel="canonical" href="https://zhantianlun.com/2019/04/22/4">
+  <link rel="canonical" href="https://zhantianlun.com/5">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>【设计模式】工厂模式之工厂方法模式 | 成事在人</title>
+  <title>【设计模式】工厂模式之抽象工厂模式 | 成事在人</title>
   
 
 
@@ -355,7 +355,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhantianlun.com/2019/04/22/4.html">
+    <link itemprop="mainEntityOfPage" href="https://zhantianlun.com/5.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
@@ -372,7 +372,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【设计模式】工厂模式之工厂方法模式
+          <h1 class="post-title" itemprop="name headline">【设计模式】工厂模式之抽象工厂模式
 
               
             
@@ -398,7 +398,7 @@
                 
               
 
-              <time title="创建时间：2019-04-22 14:17:13" itemprop="dateCreated datePublished" datetime="2019-04-22T14:17:13+08:00">2019-04-22</time>
+              <time title="创建时间：2019-04-24 15:22:49" itemprop="dateCreated datePublished" datetime="2019-04-24T15:22:49+08:00">2019-04-24</time>
             </span>
           
 
@@ -431,8 +431,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/22/4.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/22/4.html" itemprop="commentCount"></span>
+                <a href="/5.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/5.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -454,7 +454,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">1.9k</span>
+              <span title="本文字数">2.4k</span>
             </span>
           
 
@@ -485,32 +485,31 @@
       
 
       
-        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    工厂方法模式是指定义一个创建对象的接口，然后实现这个接口的工厂来决定创建什么样的实例。工厂方法让类的实例推迟到子类中进行。在这个模式中，只关心需要创建的是什么工厂，不需要关心创建的细节。而且新加入的产品符合开闭原则。</p>
-<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>1.场景</p>
-<p>​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现工厂方法模式。</p>
-<p>2.步骤</p>
-<p>（1） 创建支付接口，里面定义抽象的支付方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.factorymethod;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IPay</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">pay</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。</p>
+<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><h5 id="1-1-场景"><a href="#1-1-场景" class="headerlink" title="1.1 场景"></a>1.1 场景</h5><p>​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设）。</p>
+<h5 id="1-2-步骤"><a href="#1-2-步骤" class="headerlink" title="1.2 步骤"></a>1.2 步骤</h5><p>（1） 创建抽象的聊天和借钱的接口，提供抽象的聊天和借钱的方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ITalk</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>（2） 创建工厂接口，提供创建的方法，返回支付接口。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.factorymethod;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IPayFactory</span> </span>&#123;</span><br><span class="line">    <span class="function">IPay <span class="title">create</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ILend</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">lend</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>（3） 创建具体的支付类，AliPay,WechatPay,实现IPay接口，重写支付方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.factorymethod;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AliPay</span> <span class="keyword">implements</span> <span class="title">IPay</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">pay</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"用支付宝支付"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（2） 创建支付的抽象 工厂类，提供公开的初始化方法，提供抽象的创造聊天和支付的方法，返回值是抽象的聊天和借钱。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">PayFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"初始化数据"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">abstract</span> ITalk <span class="title">createTalk</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">abstract</span> ILend <span class="title">createLend</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package com.gupao.vip.pay.factorymethod;</span><br><span class="line"></span><br><span class="line">public class WechatPay implements IPay &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void pay() &#123;</span><br><span class="line">        System.out.println(&quot;用微信支付&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AliPayTalk</span> <span class="keyword">implements</span> <span class="title">ITalk</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"支付宝聊天"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>（4） 创建微信支付和阿里支付的工厂类，继承抽象工厂，重写抽象工厂的create方法，返回具体的支付类。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.factorymethod;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AliPayFactory</span> <span class="keyword">implements</span> <span class="title">IPayFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> IPay <span class="title">create</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> AliPay();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WechatTalk</span> <span class="keyword">implements</span> <span class="title">ITalk</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"微信可以聊天"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.factorymethod;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WechatPayFactory</span> <span class="keyword">implements</span> <span class="title">IPayFactory</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> IPay <span class="title">create</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> WechatPay();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WechatLend</span> <span class="keyword">implements</span> <span class="title">ILend</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">lend</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"微信可以借钱"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>（5） 在客服端创建所需要的阿里支付和微信支付的工厂，然后由工厂来创建具体的支付类，然后就可以调用各自的支付方法了。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.factorymethod;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        IPayFactory aliPayFactory = <span class="keyword">new</span> AliPayFactory();</span><br><span class="line">        IPay aliPay = aliPayFactory.create();</span><br><span class="line">        aliPay.pay();</span><br><span class="line"></span><br><span class="line">        IPayFactory wechatPayFactory = <span class="keyword">new</span> WechatPayFactory();</span><br><span class="line">        IPay wwechatPay = wechatPayFactory.create();</span><br><span class="line">        wwechatPay.pay();</span><br><span class="line"></span><br><span class="line">        IPayFactory uniPayFactory = <span class="keyword">new</span> UniPayFactory();</span><br><span class="line">        IPay uniPay = uniPayFactory.create();</span><br><span class="line">        uniPay.pay();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>（4） 创建阿里支付工厂和微信支付工厂，继承支付工厂接口，实现其抽象的方法。在方法中创建具体的聊天和借钱的实例。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AliPayFactory</span> <span class="keyword">extends</span> <span class="title">PayFactory</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ITalk <span class="title">createTalk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> AliPayTalk();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ILend <span class="title">createLend</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> AliPayLend();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>​    工厂方法模式只要解决了产品的扩展问题。在简单工厂中，如果在支付的同时需要加入其他的逻辑，而每个支付的逻辑都不一样，那么这个工厂的职责会变得非常的重。有点像万能工厂，不易于维护。而根据软件设计的单一职责原则，我们可以将工厂的职责拆分开来，专人干专事。阿里支付工厂就用来创建阿里支付，微信支付工厂就用来创建微信支付。</p>
-<p>​    但同时这种设计模式也有它的缺点。它增加了类的创建个数，提升了系统的复杂度和可理解度。</p>
-<p>​    所以，工厂方法模式适用的场景是：1.创建对象需要大量重复的代码。2.客服端（应用层）不依赖于产品的实例如何被创建。3.一个类是通过其子类来指定创建对象的。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WechatPayFactory</span> <span class="keyword">extends</span> <span class="title">PayFactory</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ITalk <span class="title">createTalk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> WechatTalk();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ILend <span class="title">createLend</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> WechatLend();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>（5） 在客户端创建支付宝支付和微信支付的工厂，调用工厂的创建聊天和借钱的接口创建具体的聊天和借钱的实例，最后调用聊天和借钱的方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        AliPayFactory aliPayFactory = <span class="keyword">new</span> AliPayFactory();</span><br><span class="line">        aliPayFactory.createTalk().talk();</span><br><span class="line">        aliPayFactory.createLend().lend();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"---------"</span>);</span><br><span class="line"></span><br><span class="line">        WechatPayFactory wechatPayFactory = <span class="keyword">new</span> WechatPayFactory();</span><br><span class="line">        wechatPayFactory.createTalk().talk();</span><br><span class="line">        wechatPayFactory.createLend().lend();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>​    不知道大家有没有发现，如果在上面的代码中，需要给阿里支付和微信支付添加额外的功能，则需要改变抽象工厂和具体工厂的代码。这样就违背的软件设计的开闭原则。所以抽象工厂模式也是有缺点的。第一，产品族需要扩展功能很麻烦，需要修改抽象接口的代码。第二，创建的抽象类多，增加了系统的抽象性和理解难度。</p>
 
       
     </div>
@@ -550,7 +549,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://zhantianlun.com/2019/04/22/4.html" title="【设计模式】工厂模式之工厂方法模式">https://zhantianlun.com/2019/04/22/4.html</a>
+    <a href="https://zhantianlun.com/5.html" title="【设计模式】工厂模式之抽象工厂模式">https://zhantianlun.com/5.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -579,8 +578,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/13/3.html" rel="next" title="【设计模式】工厂模式之简单工厂模式">
-                <i class="fa fa-chevron-left"></i> 【设计模式】工厂模式之简单工厂模式
+              <a href="/4.html" rel="next" title="【设计模式】工厂模式之工厂方法模式">
+                <i class="fa fa-chevron-left"></i> 【设计模式】工厂模式之工厂方法模式
               </a>
             
           </div>
@@ -589,8 +588,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/04/24/5.html" rel="prev" title="【设计模式】工厂模式之抽象工厂模式">
-                【设计模式】工厂模式之抽象工厂模式 <i class="fa fa-chevron-right"></i>
+              <a href="/6.html" rel="prev" title="【设计模式】单例模式">
+                【设计模式】单例模式 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -782,7 +781,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#举例"><span class="nav-number">2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#举例"><span class="nav-number">2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-场景"><span class="nav-number">3.</span> <span class="nav-text">1.1 场景</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-步骤"><span class="nav-number">4.</span> <span class="nav-text">1.2 步骤</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
