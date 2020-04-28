@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>【Bug】maven如何排除依赖</title>
-    <url>/1.html</url>
+    <url>/2019/04/10/1.html</url>
     <content><![CDATA[<h5 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h5><p>​    java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357)</p>
 <p>java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357) at org.lilystudio.smarty4j.Template.<init>(Template.java:134) at org.lilystudio.smarty4j.Template.<init>(Template.java:152) at org.lilystudio.smarty4j.Engine.getTemplate(Engine.java:317) at com.doit.framework.mvc.core.Doit.render(Doit.java:769) at com.doit.framework.mvc.core.Doit.forwardTo(Doit.java:711) at com.doit.framework.mvc.core.Doit.doPost(Doit.java:286) at com.doit.framework.mvc.core.Doit.doGet(Doit.java:83) at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at com.doit.framework.mvc.filter.FrameServletFilter.doFilter(FrameServletFilter.java:30) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at com.doit.framework.mvc.filter.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:32) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137) at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660) at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798) at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808) at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) at java.lang.Thread.run(Thread.java:748)</init></init></p>
 <h5 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h5><p>​    这个错误便表示使用jar包文件的依赖冲突引起的，仔细查看jar包，会发现有同一个jar的版本冲突：</p>
@@ -22,7 +22,7 @@
   </entry>
   <entry>
     <title>【设计模式】享元模式</title>
-    <url>/10.html</url>
+    <url>/2019/06/04/10.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。</p>
 <p>​    享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后通过不变的部分，达到减少对象数量并减少内存的目的。</p>
 <h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5><p>​    当系统中的多处需要一组信息，可以把这些信息封装到一个对象中，然后对对象进行缓存，这样，一个对象就可以提供给对多处访问。避免了多次使用同时创建对象，造成内存的消耗，影响性能。</p>
@@ -98,7 +98,7 @@
   </entry>
   <entry>
     <title>【Bug】Idea Debug断点端口被占用</title>
-    <url>/12.html</url>
+    <url>/2019/07/02/12.html</url>
     <content><![CDATA[<p>​    有时候，用idea来debug断点调试的时候，会提示debug断点的端口被占用。解决办法：</p>
 <ol>
 <li>点击任务栏上的Edit Configurations…</li>
@@ -130,7 +130,7 @@
   </entry>
   <entry>
     <title>【软件设计原则】七大软件设计原则</title>
-    <url>/2.html</url>
+    <url>/2019/04/12/2.html</url>
     <content><![CDATA[<h5 id="开闭原则：对扩展开放，对修改关闭。"><a href="#开闭原则：对扩展开放，对修改关闭。" class="headerlink" title="开闭原则：对扩展开放，对修改关闭。"></a>开闭原则：对扩展开放，对修改关闭。</h5><p>​    例子：咕泡课程：有java,前端，测试等等。每种课程有id,名称，价格。但是都不一样：新建一个抽象的接口Icouce，里面有三个方法，getid,getName,getPrice，新建一个javaCource，继承接口,重写三个方法。然后创建一个构造器。然后创建一个测试类，创建抽象接口的具体实现类，给属性赋值。然后就可以得到javaCouce的id,name,privce。 问题是现在课程可能会打折。所以就要创建一个javaDiscountCouse类在里面对price进行打折。这样就可以在获取折后价格的同时获取到原价了。</p>
 <h5 id="依赖倒置原则："><a href="#依赖倒置原则：" class="headerlink" title="依赖倒置原则："></a>依赖倒置原则：</h5><p>​    高层模块不应该依赖底层模块。两者都应该依赖其抽象。抽象应该依赖细节，细节应该依赖抽象。针对接口编程，不针对实现编程。 可以减少类之间的耦合性，提高系统的稳定性。提高代码的可阅读性和可维护性，可以降低修改程序造成的风险。</p>
 <h5 id="单一职责原则："><a href="#单一职责原则：" class="headerlink" title="单一职责原则："></a>单一职责原则：</h5><p>​    不要存在一个导致类变更的原因。一个类，接口，方法只负责一项职责。优点：降低类的耦合性，提高类的可阅读性，提高系统的可维护性，降低变更引起的风险。</p>
@@ -153,7 +153,7 @@
   </entry>
   <entry>
     <title>【设计模式】工厂模式之简单工厂模式</title>
-    <url>/3.html</url>
+    <url>/2019/04/13/3.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    简单工厂模式是指由一个工厂决定创建哪一种产品类的实例。简单工厂模式适用于需要创建较少的产品实例。客户端在创建的时候，只需要传入创建的参数，不需要知道是如何创建的。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>​    2.1 场景：</p>
 <p>​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现简单工厂模式。</p>
@@ -183,7 +183,7 @@
   </entry>
   <entry>
     <title>【设计模式】工厂模式之工厂方法模式</title>
-    <url>/4.html</url>
+    <url>/2019/04/22/4.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    工厂方法模式是指定义一个创建对象的接口，然后实现这个接口的工厂来决定创建什么样的实例。工厂方法让类的实例推迟到子类中进行。在这个模式中，只关心需要创建的是什么工厂，不需要关心创建的细节。而且新加入的产品符合开闭原则。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>1.场景</p>
 <p>​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现工厂方法模式。</p>
@@ -220,7 +220,7 @@
   </entry>
   <entry>
     <title>【设计模式】门面模式</title>
-    <url>/8.html</url>
+    <url>/2019/05/22/8.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    门面模式又叫外观模式，它提供了一个同意的接口，用来对访问子系统中的多个接口。它的主要特性是定义了一个高层的接口，让子系统更容易调用，是属于一种结构型的设计模式。</p>
 <h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><p> 1.通用的写法，这里创建三个子系统和和一个门面系统，门面系统提供三个方法分别调用子系统的方法。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SubSystemA</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doA</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"do a"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -278,7 +278,7 @@
   </entry>
   <entry>
     <title>【设计模式】工厂模式之抽象工厂模式</title>
-    <url>/5.html</url>
+    <url>/2019/04/24/5.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><h5 id="1-1-场景"><a href="#1-1-场景" class="headerlink" title="1.1 场景"></a>1.1 场景</h5><p>​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设）。</p>
 <h5 id="1-2-步骤"><a href="#1-2-步骤" class="headerlink" title="1.2 步骤"></a>1.2 步骤</h5><p>（1） 创建抽象的聊天和借钱的接口，提供抽象的聊天和借钱的方法。</p>
@@ -314,7 +314,7 @@
   </entry>
   <entry>
     <title>【设计模式】装饰器模式</title>
-    <url>/9.html</url>
+    <url>/2019/06/03/9.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。</p>
 <ol>
@@ -408,7 +408,7 @@
   </entry>
   <entry>
     <title>【设计模式】代理模式</title>
-    <url>/7.html</url>
+    <url>/2019/05/05/7.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><h5 id="1-静态代理"><a href="#1-静态代理" class="headerlink" title="1.静态代理"></a>1.静态代理</h5><p>​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。</p>
 <p>(1) 创建IPerson接口，给出找对象的抽象方法。</p>
@@ -490,7 +490,7 @@
   </entry>
   <entry>
     <title>【Spring】用300行代码实现spring1.0版本（详细注释）</title>
-    <url>/11.html</url>
+    <url>/2019/07/01/11.html</url>
     <content><![CDATA[<p>​    通过手写来实现SpringMvc三层模型,spring的Ioc控制反转，Di依赖注入的功能，主要分为配置阶段，初始化阶段和运行阶段这三个阶段。</p>
 <h5 id="配置阶段"><a href="#配置阶段" class="headerlink" title="配置阶段"></a>配置阶段</h5><ol>
 <li>配置web.xml，设定init-param和param-name ， 设置url-parttern，方法的过滤路径为 /*。</li>
@@ -565,7 +565,7 @@
   </entry>
   <entry>
     <title>【设计模式】单例模式</title>
-    <url>/6.html</url>
+    <url>/2019/05/02/6.html</url>
     <content><![CDATA[<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    单例模式是指一个类在任何情况下，都只有一个实例。它提供了一个全局的访问点。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><h5 id="1-饿汉式单例模式"><a href="#1-饿汉式单例模式" class="headerlink" title="1.饿汉式单例模式"></a>1.饿汉式单例模式</h5><p>​    饿汉式单例模式提供了final修饰的静态变量，所以在类加载的过程中，在加载到变量的时候就进行了初始化的操作。而不管创建后是不是要使用这个类。给人一种比较饥饿的感觉，所以就叫它饿汉式的单例模式。而且，由于在线程访问它之前，就进行了初始化，所以它就不会出现线程安全的问题，因而它是绝对线程安全的一种单例模式。</p>
 <p>​    饿汉式单例模式的优点是它没有加任何锁，它的执行效率比较高，用户体验也比懒汉式单例模式好。缺点是，当要创建成单例模式的类非常多，而有些类又不会被用到的时候，就会非常的浪费内存。</p>
@@ -662,7 +662,7 @@
   </entry>
   <entry>
     <title>【spring5源码分析】IoC部分</title>
-    <url>/13.html</url>
+    <url>/2019/07/08/13.html</url>
     <content><![CDATA[<h5 id="定位阶段"><a href="#定位阶段" class="headerlink" title="定位阶段"></a>定位阶段</h5><p>​    1. 构造器中初始化。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="title">ClassPathXmlApplicationContext</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">		String[] configLocations, <span class="keyword">boolean</span> refresh, @Nullable ApplicationContext parent)</span></span></span><br><span class="line"><span class="function">		<span class="keyword">throws</span> BeansException </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">super</span>(parent);</span><br><span class="line">	setConfigLocations(configLocations);</span><br><span class="line">	<span class="keyword">if</span> (refresh) &#123;</span><br><span class="line">		refresh();</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
