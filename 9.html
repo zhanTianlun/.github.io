@@ -95,21 +95,21 @@
 
 
 
-  <meta name="description" content="定义​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  1234567">
+  <meta name="description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  12345678910public">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【设计模式】装饰器模式">
 <meta property="og:url" content="https://zhantianlun.com/9.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="定义​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  1234567">
+<meta property="og:description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  12345678910public">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200403151618230.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200403153005239.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200403153915766.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2020-04-22T07:32:09.138Z">
+<meta property="og:updated_time" content="2020-04-28T09:12:01.302Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【设计模式】装饰器模式">
-<meta name="twitter:description" content="定义​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  1234567">
+<meta name="twitter:description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  12345678910public">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200403151618230.jpg">
 
 
@@ -489,12 +489,14 @@
       
 
       
-        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。</p>
-<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>​    这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。</p>
+        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。</p>
+<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。</p>
 <ol>
 <li>创建煎饼果子类。提供getName和getPrice方法。</li>
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"煎饼"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">5</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<a id="more"></a>
 
 <ol start="2">
 <li>觉得不够吃，想加一个鸡蛋。创建一个类BattarCakeWithOneEgg继承BatterCake类，重写getName和getPrice方法。</li>
@@ -515,8 +517,9 @@
 <li>看看结果。</li>
 </ol>
 <p><img src="https://img-blog.csdnimg.cn/20200403151618230.jpg" alt></p>
-<pre><code>这个时候，如果我想再一个鸡蛋。就需要继续继承BatterCakeWithOneEggOneSausage 这个类。想再加，就必须再继承。</code></pre><p>​    这样不停的定制，显然是不科学的做法。</p>
-<p>   下面就用装饰器模式来改造下这个代码。</p>
+<p> 这个时候，如果我想再一个鸡蛋。就需要继续继承BatterCakeWithOneEggOneSausage 这个类。想再加，就必须再继承。</p>
+<p>这样不停的定制，显然是不科学的做法。</p>
+<p>下面就用装饰器模式来改造下这个代码。</p>
 <ol>
 <li>创建一个抽象的煎饼对象，提供getName和getPrice方法。</li>
 </ol>
@@ -555,12 +558,12 @@
 </li>
 </ol>
 <p><img src="https://img-blog.csdnimg.cn/20200403153915766.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70" alt></p>
-<p>​    这里的BatterCake就是一个抽象的组件，它充当了被装饰的原始对象，规定了被装饰对象的行为。BaseBatterCake就是具体组件，他是实现或者继承抽象组件的一个具体对象，也就是被装饰对象。BatterCakeDecorator就是通用的装饰器，它的内部必然有一个属性指向抽象的组件。它的实现一般是一个抽象类，主要是为了让它的子类按照其构造形式传入一个抽象的组件，这是强制的通用行为。而如果系统中的装饰逻辑比较的单一，并不需要许多的装饰器，那么就可以直接省略这个类，直接实现一个具体的装饰器就可以。而下面的 BatterCakeEggDecorator 和 BatterCakeSausageDecorator 就是具体的装饰器对象。理论上，每一个对象都扩展了BaseBatterCake的功能。</p>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p> 装饰器模式角色分配符合设计模式的里氏替换原则，依赖倒置原则，从而使得它具备很强的扩展性，最终满足开闭原则。</p>
+<p>这里的BatterCake就是一个抽象的组件，它充当了被装饰的原始对象，规定了被装饰对象的行为。BaseBatterCake就是具体组件，他是实现或者继承抽象组件的一个具体对象，也就是被装饰对象。BatterCakeDecorator就是通用的装饰器，它的内部必然有一个属性指向抽象的组件。它的实现一般是一个抽象类，主要是为了让它的子类按照其构造形式传入一个抽象的组件，这是强制的通用行为。而如果系统中的装饰逻辑比较的单一，并不需要许多的装饰器，那么就可以直接省略这个类，直接实现一个具体的装饰器就可以。而下面的 BatterCakeEggDecorator 和 BatterCakeSausageDecorator 就是具体的装饰器对象。理论上，每一个对象都扩展了BaseBatterCake的功能。</p>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>装饰器模式角色分配符合设计模式的里氏替换原则，依赖倒置原则，从而使得它具备很强的扩展性，最终满足开闭原则。</p>
 <ol>
 <li>装饰器模式和代理模式的对比</li>
 </ol>
-<p>​     装饰器更强调对被装饰对象自身的扩展，而代理模式更强调代理对象的功能增强。</p>
+<p>装饰器更强调对被装饰对象自身的扩展，而代理模式更强调代理对象的功能增强。</p>
 <ol start="2">
 <li>代理模式的优点</li>
 </ol>

@@ -95,13 +95,13 @@
 
 
 
-  <meta name="description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例1.静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。 (1) 创建IPerson接口，给出找对象的抽象方法。 123public interface IP">
+  <meta name="description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。  创建IPerson接口，给出找对象的抽象方法。">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【设计模式】代理模式">
 <meta property="og:url" content="https://zhantianlun.com/7.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例1.静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。 (1) 创建IPerson接口，给出找对象的抽象方法。 123public interface IP">
+<meta property="og:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。  创建IPerson接口，给出找对象的抽象方法。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200330175323258.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331093240916.jpg">
@@ -110,10 +110,10 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331100243244.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331100412312.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331102535128.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2020-04-22T07:15:26.497Z">
+<meta property="og:updated_time" content="2020-04-28T09:10:08.362Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【设计模式】代理模式">
-<meta name="twitter:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例1.静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。 (1) 创建IPerson接口，给出找对象的抽象方法。 123public interface IP">
+<meta name="twitter:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。  创建IPerson接口，给出找对象的抽象方法。">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200330175323258.jpg">
 
 
@@ -462,7 +462,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">5.1k</span>
+              <span title="本文字数">5k</span>
             </span>
           
 
@@ -493,64 +493,95 @@
       
 
       
-        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。</p>
-<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><h5 id="1-静态代理"><a href="#1-静态代理" class="headerlink" title="1.静态代理"></a>1.静态代理</h5><p>​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。</p>
-<p>(1) 创建IPerson接口，给出找对象的抽象方法。</p>
+        <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。</p>
+<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="静态代理"><a href="#静态代理" class="headerlink" title="静态代理"></a>静态代理</h5><p>​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。</p>
+<ol>
+<li><p>创建IPerson接口，给出找对象的抽象方法。</p>
+<a id="more"></a>
+
+</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IPerson</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">findLove</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(2) 创建张三的实例，继承IPerson接口，重写找对象的方法。</p>
+<ol start="2">
+<li>创建张三的实例，继承IPerson接口，重写找对象的方法。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ZhanSan</span> <span class="keyword">implements</span> <span class="title">IPerson</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findLove</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"张三要求：肤白貌美大长腿"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(3) 创建张三的代理对象（他父亲），在构造方法中传入张三，重写张三的找对象方法。</p>
+<ol start="3">
+<li>创建张三的代理对象（他父亲），在构造方法中传入张三，重写张三的找对象方法。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ZhangLaoSan</span> <span class="keyword">implements</span> <span class="title">IPerson</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> ZhanSan zhanSan;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">ZhangLaoSan</span> <span class="params">(ZhanSan zhanSan)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.zhanSan = zhanSan;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findLove</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"张老三开始物色"</span>);</span><br><span class="line">        zhanSan.findLove();</span><br><span class="line">        System.out.println(<span class="string">"开始交往"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(4) 测试。</p>
+<ol start="4">
+<li>测试。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ZhangLaoSan zhangLaoSan = <span class="keyword">new</span> ZhangLaoSan(<span class="keyword">new</span> ZhanSan());</span><br><span class="line">        zhangLaoSan.findLove();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(5).结果。</p>
+<ol start="5">
+<li>结果。</li>
+</ol>
 <p><img src="https://img-blog.csdnimg.cn/20200330175323258.jpg" alt></p>
-<p>​    这个场景有个弊端，如果还有赵六要相亲，就需要再创建一个赵六的代理。如果还有其他对象也需要相亲的话，就需要创建更多的代理对象，这样做就违背了开闭原则。而在真实的场景中，有专门找对象的中介或者机构：媒婆。所以这里可以用动态代理来构建媒婆这样角色。</p>
-<h5 id="2-jdk动态代理"><a href="#2-jdk动态代理" class="headerlink" title="2.jdk动态代理"></a>2.jdk动态代理</h5><p>​    Java的生态中，用的比较多的是JDK自带的动态代理。</p>
-<p>（1）创建媒婆代理类，继承InvocationHandler接口，重写invoke方法。</p>
+<p>这个场景有个弊端，如果还有赵六要相亲，就需要再创建一个赵六的代理。如果还有其他对象也需要相亲的话，就需要创建更多的代理对象，这样做就违背了开闭原则。而在真实的场景中，有专门找对象的中介或者机构：媒婆。所以这里可以用动态代理来构建媒婆这样角色。</p>
+<h5 id="jdk动态代理"><a href="#jdk动态代理" class="headerlink" title="jdk动态代理"></a>jdk动态代理</h5><p>Java的生态中，用的比较多的是JDK自带的动态代理。</p>
+<ol>
+<li>创建媒婆代理类，继承InvocationHandler接口，重写invoke方法。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.lang.reflect.InvocationHandler;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Proxy;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MeiPoProxy</span> <span class="keyword">implements</span> <span class="title">InvocationHandler</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> IPerson target;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> IPerson <span class="title">getInstance</span><span class="params">(IPerson target)</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.target = target;</span><br><span class="line">        Class&lt;?&gt; clazz = target.getClass();</span><br><span class="line">        <span class="keyword">return</span> (IPerson) Proxy.newProxyInstance(clazz.getClassLoader(),clazz.getInterfaces(),<span class="keyword">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">invoke</span><span class="params">(Object proxy, Method method, Object[] args)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">        before();</span><br><span class="line">        Object result = method.invoke(<span class="keyword">this</span>.target,args);</span><br><span class="line">        after();</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">after</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"开始交往"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">before</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"开始物色"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(2) 创建赵六实例。</p>
+<ol start="2">
+<li>创建赵六实例。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ZhaoLiu</span> <span class="keyword">implements</span> <span class="title">IPerson</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findLove</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"赵六要求：有车有房学历高"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(3) 测试。</p>
+<ol start="3">
+<li>测试。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        MeiPoProxy proxy = <span class="keyword">new</span> MeiPoProxy();</span><br><span class="line">        IPerson zhangsan =  proxy.getInstance(<span class="keyword">new</span> ZhanSan());</span><br><span class="line">        zhangsan.findLove();</span><br><span class="line"></span><br><span class="line">        IPerson zhaoliu = proxy.getInstance(<span class="keyword">new</span> ZhaoLiu());</span><br><span class="line">        zhaoliu.findLove();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(4) 结果。</p>
+<ol start="4">
+<li>结果。</li>
+</ol>
 <p><img src="https://img-blog.csdnimg.cn/20200331093240916.jpg" alt></p>
-<h5 id="3-cglib动态代理"><a href="#3-cglib动态代理" class="headerlink" title="3.cglib动态代理"></a>3.cglib动态代理</h5><p>(1) 引入cglib的jar包。</p>
+<h5 id="cglib动态代理"><a href="#cglib动态代理" class="headerlink" title="cglib动态代理"></a>cglib动态代理</h5><ol>
+<li>引入cglib的jar包。</li>
+</ol>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>cglib<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>cglib<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.2.4<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p> (2) 写一个孟婆类继承MethodInterceptor。</p>
+<ol start="2">
+<li>写一个孟婆类继承MethodInterceptor。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> net.sf.cglib.proxy.Enhancer;</span><br><span class="line"><span class="keyword">import</span> net.sf.cglib.proxy.MethodInterceptor;</span><br><span class="line"><span class="keyword">import</span> net.sf.cglib.proxy.MethodProxy;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Method;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CglibMeipo</span> <span class="keyword">implements</span> <span class="title">MethodInterceptor</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">getInstance</span><span class="params">(Class&lt;?&gt; clazz)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line"></span><br><span class="line">        Enhancer enhancer = <span class="keyword">new</span> Enhancer();</span><br><span class="line"></span><br><span class="line">        <span class="comment">//要把哪个设置为即将生产的新的父类</span></span><br><span class="line">        enhancer.setSuperclass(clazz);</span><br><span class="line">        enhancer.setCallback(<span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> enhancer.create();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">intercept</span><span class="params">(Object o, Method method, Object[] objects, MethodProxy methodProxy)</span> <span class="keyword">throws</span> Throwable </span>&#123;</span><br><span class="line">        <span class="comment">//业务的增强</span></span><br><span class="line">        before();</span><br><span class="line">        Object obj = methodProxy.invokeSuper(o, objects);</span><br><span class="line">        after();</span><br><span class="line">        <span class="keyword">return</span> obj;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">before</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"我是媒婆：我要给你找对象，现在已确认需求"</span>);</span><br><span class="line">        System.out.println(<span class="string">"开始物色"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">after</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"已经找到"</span>);</span><br><span class="line">        System.out.println(<span class="string">"开始交往"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(3) 创建单身客户类。这里可以看到Customer是没有实现任何接口的。它是通过动态继承代理对象类来实现动态代理的。</p>
+<ol start="3">
+<li>创建单身客户类。这里可以看到Customer是没有实现任何接口的。它是通过动态继承代理对象类来实现动态代理的。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Customer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">findLove</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"客户要求： 肤白貌美大长腿"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(4) 写一个测试类。</p>
+<ol start="4">
+<li>写一个测试类。</li>
+</ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Customer customer = (Customer) <span class="keyword">new</span> CglibMeipo().getInstance(Customer<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">            customer.findLove();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>(5) 查看测试结果。</p>
+<ol start="5">
+<li>查看测试结果。</li>
+</ol>
 <p><img src="https://img-blog.csdnimg.cn/20200331094928472.jpg" alt></p>
-<p>​    那么cglib的底层是如何实现动态代理的呢，这里可以通过一行代码，将cglib动态生成的代理class从内存读取到磁盘中。</p>
+<p>那么cglib的底层是如何实现动态代理的呢，这里可以通过一行代码，将cglib动态生成的代理class从内存读取到磁盘中。</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> net.sf.cglib.core.DebuggingClassWriter;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">//利用cglib的代理类将内存中的.class写入磁盘</span></span><br><span class="line">            System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY,<span class="string">"E://cglib_proxy_class/"</span>);</span><br><span class="line"></span><br><span class="line">            Customer customer = (Customer) <span class="keyword">new</span> CglibMeipo().getInstance(Customer<span class="class">.<span class="keyword">class</span>)</span>;</span><br><span class="line">            customer.findLove();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>​    这时可以在E盘根目录中看到从内存中读取的文件。打开目录就能看到cglib动态的生成了三个class文件。</p>
+<p>这时可以在E盘根目录中看到从内存中读取的文件。打开目录就能看到cglib动态的生成了三个class文件。</p>
 <p><img src="https://img-blog.csdnimg.cn/2020033109574010.jpg" alt></p>
-<p>​    把第二个文件Customer$$EnhancerByCGLIB$$ef2de5ed.class拖入到idea编辑器中，可以看到，这是cglib动态生成的一个代理对象，这个对象继承了目标对象。</p>
+<p>把第二个文件Customer$$EnhancerByCGLIB$$ef2de5ed.class拖入到idea编辑器中，可以看到，这是cglib动态生成的一个代理对象，这个对象继承了目标对象。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200331100243244.jpg" alt></p>
-<p>​    重写了目标对象的方法。</p>
+<p>重写了目标对象的方法。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200331100412312.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70" alt></p>
-<p>​    可以看到这里有一个CGLIB$findLove$0() 的方法，这个方法是被 CglibMeipo类的 method.invokeSuper() 调用的，而下面的 findLove() 方法是被MethodProxy的invoke()方法调用的。</p>
-<p>​    所以总的来说，调用的顺序是，代理对象调用findlove() –&gt; 调用拦截器 –&gt; methodProxy. invokeSuper() –&gt; CGLIB$findLove$0() –&gt; Customer.findLove()。</p>
-<p>​    我们可以点开methodProxy. invokeSuper()的源码看看。</p>
+<p>可以看到这里有一个CGLIB$findLove$0() 的方法，这个方法是被 CglibMeipo类的 method.invokeSuper() 调用的，而下面的 findLove() 方法是被MethodProxy的invoke()方法调用的。</p>
+<p>所以总的来说，调用的顺序是，代理对象调用findlove() –&gt; 调用拦截器 –&gt; methodProxy. invokeSuper() –&gt; CGLIB$findLove$0() –&gt; Customer.findLove()。</p>
+<p>我们可以点开methodProxy. invokeSuper()的源码看看。</p>
 <p><img src="https://img-blog.csdnimg.cn/20200331102535128.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70" alt></p>
-<p>​    可以发现，这里获取了代理对象的FastClass信息。然后调用了被代理对象的对应方法。</p>
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>1.静态代理和动态代理</p>
+<p>可以发现，这里获取了代理对象的FastClass信息。然后调用了被代理对象的对应方法。</p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>1.静态代理和动态代理</p>
 <p>（1）静态代理，实际上就是一种通过继承来重写方法并实现方法增强的，代理类是没有实现任何接口的。而动态代理是通过实现jdk或者cglib的接口来创建一个拦截器，然后在拦截器中进行方法增强的。</p>
 <p>（2）静态代理只能手动完成代理操作，如果代理类增加了方法，代理类需要同步增加该方法。违背了开闭原则。</p>
 <p>2.jdk动态代理和cglib动态代理</p>
@@ -835,7 +866,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#举例"><span class="nav-number">2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-静态代理"><span class="nav-number">3.</span> <span class="nav-text">1.静态代理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-jdk动态代理"><span class="nav-number">4.</span> <span class="nav-text">2.jdk动态代理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-cglib动态代理"><span class="nav-number">5.</span> <span class="nav-text">3.cglib动态代理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">6.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#举例"><span class="nav-number">2.</span> <span class="nav-text">举例</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#静态代理"><span class="nav-number">2.1.</span> <span class="nav-text">静态代理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#jdk动态代理"><span class="nav-number">2.2.</span> <span class="nav-text">jdk动态代理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#cglib动态代理"><span class="nav-number">2.3.</span> <span class="nav-text">cglib动态代理</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
