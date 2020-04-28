@@ -694,8 +694,6 @@
 <li>点击任务栏上的Edit Configurations…</li>
 </ol>
 <p><img src="https://img-blog.csdnimg.cn/20200417093949723.jpg" alt></p>
-<ol start="2">
-<li><p>找到debug的端口号。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -707,7 +705,7 @@
           <!--/noindex-->
         
       
-    </li></ol></div>
+    </div>
 
     
 
@@ -1099,7 +1097,6 @@
         
           <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>享元模式又称为轻量级模式，是对象池的一种实现，类似于线程池。线程池可以避免重复的创建和销毁对象，消耗性能。提供了减少对象数量从而改善应用所需的对象结构的方式。其宗旨是共享细粒度对象，将对象的同意访问集中起来，不必为每一个访问者单独创建一个对象，以此来降低系统的消耗，属于结构型的模式。</p>
 <p>享元模式把对象的状态分为内部状态和外部状态，内部状态是不变的，外部状态是变化的；然后通过不变的部分，达到减少对象数量并减少内存的目的。</p>
-<h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1301,10 +1298,6 @@
         
           <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。</p>
-<ol>
-<li>创建煎饼果子类。提供getName和getPrice方法。</li>
-</ol>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"煎饼"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">5</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1708,8 +1701,6 @@
         
           <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。</p>
 <h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="静态代理"><a href="#静态代理" class="headerlink" title="静态代理"></a>静态代理</h5><p>​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。</p>
-<ol>
-<li><p>创建IPerson接口，给出找对象的抽象方法。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -1721,7 +1712,7 @@
           <!--/noindex-->
         
       
-    </li></ol></div>
+    </div>
 
     
 
@@ -1911,7 +1902,6 @@
         
           <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>​    单例模式是指一个类在任何情况下，都只有一个实例。它提供了一个全局的访问点。</p>
 <h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="饿汉式单例模式"><a href="#饿汉式单例模式" class="headerlink" title="饿汉式单例模式"></a>饿汉式单例模式</h5><p>饿汉式单例模式提供了final修饰的静态变量，所以在类加载的过程中，在加载到变量的时候就进行了初始化的操作。而不管创建后是不是要使用这个类。给人一种比较饥饿的感觉，所以就叫它饿汉式的单例模式。而且，由于在线程访问它之前，就进行了初始化，所以它就不会出现线程安全的问题，因而它是绝对线程安全的一种单例模式。</p>
-<p>饿汉式单例模式的优点是它没有加任何锁，它的执行效率比较高，用户体验也比懒汉式单例模式好。缺点是，当要创建成单例模式的类非常多，而有些类又不会被用到的时候，就会非常的浪费内存。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -2112,7 +2102,6 @@
       
         
           <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。</p>
-<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h5><p>有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设）。</p>
           <!--noindex-->
           
             <div class="post-button text-center">
@@ -2313,7 +2302,7 @@
       
         
           <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>工厂方法模式是指定义一个创建对象的接口，然后实现这个接口的工厂来决定创建什么样的实例。工厂方法让类的实例推迟到子类中进行。在这个模式中，只关心需要创建的是什么工厂，不需要关心创建的细节。而且新加入的产品符合开闭原则。</p>
-<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h5><p>​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现工厂方法模式。</p>
+<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4>
           <!--noindex-->
           
             <div class="post-button text-center">

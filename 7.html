@@ -95,13 +95,13 @@
 
 
 
-  <meta name="description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。  创建IPerson接口，给出找对象的抽象方法。">
+  <meta name="description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【设计模式】代理模式">
 <meta property="og:url" content="https://zhantianlun.com/7.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。  创建IPerson接口，给出找对象的抽象方法。">
+<meta property="og:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200330175323258.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331093240916.jpg">
@@ -110,10 +110,10 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331100243244.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331100412312.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200331102535128.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2020-04-28T09:10:08.362Z">
+<meta property="og:updated_time" content="2020-04-28T09:18:13.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【设计模式】代理模式">
-<meta name="twitter:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。  创建IPerson接口，给出找对象的抽象方法。">
+<meta name="twitter:description" content="定义​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。 举例静态代理​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200330175323258.jpg">
 
 
@@ -495,11 +495,10 @@
       
         <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>​    代理模式是指为对象提供一种代理，以控制对该对象的访问，属于一种结构型模式。在某些情况下，一个对象不能直接访问另一个对象，代理模式就在客户端和被服务端之间起到了一个中介的作用。</p>
 <h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="静态代理"><a href="#静态代理" class="headerlink" title="静态代理"></a>静态代理</h5><p>​    场景：张三要结婚，但是由于工作繁忙，找不到对象。那么张三的父亲可以代理张三找对象。</p>
-<ol>
-<li><p>创建IPerson接口，给出找对象的抽象方法。</p>
 <a id="more"></a>
 
-</li>
+<ol>
+<li>创建IPerson接口，给出找对象的抽象方法。</li>
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IPerson</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">findLove</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 

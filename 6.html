@@ -113,7 +113,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200308155413736.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200308160724401.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200309155311615.jpg">
-<meta property="og:updated_time" content="2020-04-28T09:07:21.170Z">
+<meta property="og:updated_time" content="2020-04-28T09:17:45.719Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【设计模式】单例模式">
 <meta name="twitter:description" content="定义​    单例模式是指一个类在任何情况下，都只有一个实例。它提供了一个全局的访问点。 举例饿汉式单例模式饿汉式单例模式提供了final修饰的静态变量，所以在类加载的过程中，在加载到变量的时候就进行了初始化的操作。而不管创建后是不是要使用这个类。给人一种比较饥饿的感觉，所以就叫它饿汉式的单例模式。而且，由于在线程访问它之前，就进行了初始化，所以它就不会出现线程安全的问题，因而它是绝对线程安全的一">
@@ -498,9 +498,9 @@
       
         <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>​    单例模式是指一个类在任何情况下，都只有一个实例。它提供了一个全局的访问点。</p>
 <h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="饿汉式单例模式"><a href="#饿汉式单例模式" class="headerlink" title="饿汉式单例模式"></a>饿汉式单例模式</h5><p>饿汉式单例模式提供了final修饰的静态变量，所以在类加载的过程中，在加载到变量的时候就进行了初始化的操作。而不管创建后是不是要使用这个类。给人一种比较饥饿的感觉，所以就叫它饿汉式的单例模式。而且，由于在线程访问它之前，就进行了初始化，所以它就不会出现线程安全的问题，因而它是绝对线程安全的一种单例模式。</p>
-<p>饿汉式单例模式的优点是它没有加任何锁，它的执行效率比较高，用户体验也比懒汉式单例模式好。缺点是，当要创建成单例模式的类非常多，而有些类又不会被用到的时候，就会非常的浪费内存。</p>
 <a id="more"></a>
 
+<p>饿汉式单例模式的优点是它没有加任何锁，它的执行效率比较高，用户体验也比懒汉式单例模式好。缺点是，当要创建成单例模式的类非常多，而有些类又不会被用到的时候，就会非常的浪费内存。</p>
 <ol>
 <li>简单的饿汉式单例模式</li>
 </ol>

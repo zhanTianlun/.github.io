@@ -95,21 +95,21 @@
 
 
 
-  <meta name="description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  12345678910public">
+  <meta name="description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【设计模式】装饰器模式">
 <meta property="og:url" content="https://zhantianlun.com/9.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  12345678910public">
+<meta property="og:description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200403151618230.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200403153005239.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200403153915766.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2020-04-28T09:12:01.302Z">
+<meta property="og:updated_time" content="2020-04-28T09:18:41.273Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【设计模式】装饰器模式">
-<meta name="twitter:description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。  创建煎饼果子类。提供getName和getPrice方法。  12345678910public">
+<meta name="twitter:description" content="定义装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。 举例这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200403151618230.jpg">
 
 
@@ -491,12 +491,12 @@
       
         <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>装饰器模式也称为包装模式，是指在不改变原有对象的基础上，将功能附加到原有对象上，提供了比继承更有弹性的替代方案（扩展原有对象的功能），属于结构型模式。</p>
 <h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><p>这里举例一个日常生活常见的例子。我们每天吃早饭可能会买的煎饼果子。煎饼果子是可以加上调料和其他肉食的。如果觉得不够吃，可以加上鸡蛋或者香肠。</p>
+<a id="more"></a>
+
 <ol>
 <li>创建煎饼果子类。提供getName和getPrice方法。</li>
 </ol>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">BatterCake</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> String <span class="title">getName</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"煎饼"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">int</span> <span class="title">getPrice</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">5</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<a id="more"></a>
 
 <ol start="2">
 <li>觉得不够吃，想加一个鸡蛋。创建一个类BattarCakeWithOneEgg继承BatterCake类，重写getName和getPrice方法。</li>
