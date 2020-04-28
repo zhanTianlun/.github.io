@@ -95,18 +95,22 @@
 
 
 
-  <meta name="description" content="定义​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。 举例1.1 场景​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设">
+  <meta name="description" content="定义​    门面模式又叫外观模式，它提供了一个同意的接口，用来对访问子系统中的多个接口。它的主要特性是定义了一个高层的接口，让子系统更容易调用，是属于一种结构型的设计模式。 代码 1.通用的写法，这里创建三个子系统和和一个门面系统，门面系统提供三个方法分别调用子系统的方法。 12345public class SubSystemA &amp;#123;    public void doA()&amp;#123">
 <meta name="keywords" content="设计模式">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【设计模式】工厂模式之抽象工厂模式">
-<meta property="og:url" content="https://zhantianlun.github.io/2019/04/24/5/index.html">
+<meta property="og:title" content="【设计模式】门面模式">
+<meta property="og:url" content="https://zhantianlun.com/8.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="定义​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。 举例1.1 场景​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设">
+<meta property="og:description" content="定义​    门面模式又叫外观模式，它提供了一个同意的接口，用来对访问子系统中的多个接口。它的主要特性是定义了一个高层的接口，让子系统更容易调用，是属于一种结构型的设计模式。 代码 1.通用的写法，这里创建三个子系统和和一个门面系统，门面系统提供三个方法分别调用子系统的方法。 12345public class SubSystemA &amp;#123;    public void doA()&amp;#123">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-04-22T06:33:24.021Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200403105801413.jpg">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200403110106161.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20200403111025138.jpg">
+<meta property="og:updated_time" content="2020-04-22T07:23:51.754Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【设计模式】工厂模式之抽象工厂模式">
-<meta name="twitter:description" content="定义​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。 举例1.1 场景​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设">
+<meta name="twitter:title" content="【设计模式】门面模式">
+<meta name="twitter:description" content="定义​    门面模式又叫外观模式，它提供了一个同意的接口，用来对访问子系统中的多个接口。它的主要特性是定义了一个高层的接口，让子系统更容易调用，是属于一种结构型的设计模式。 代码 1.通用的写法，这里创建三个子系统和和一个门面系统，门面系统提供三个方法分别调用子系统的方法。 12345public class SubSystemA &amp;#123;    public void doA()&amp;#123">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20200403105801413.jpg">
 
 
 
@@ -114,7 +118,7 @@
 
   
   
-  <link rel="canonical" href="https://zhantianlun.github.io/2019/04/24/5/">
+  <link rel="canonical" href="https://zhantianlun.com/8">
 
 
 
@@ -124,7 +128,7 @@
   };
 </script>
 
-  <title>【设计模式】工厂模式之抽象工厂模式 | 成事在人</title>
+  <title>【设计模式】门面模式 | 成事在人</title>
   
 
 
@@ -355,7 +359,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhantianlun.github.io/2019/04/24/5/">
+    <link itemprop="mainEntityOfPage" href="https://zhantianlun.com/8.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
@@ -372,7 +376,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【设计模式】工厂模式之抽象工厂模式
+          <h1 class="post-title" itemprop="name headline">【设计模式】门面模式
 
               
             
@@ -398,7 +402,7 @@
                 
               
 
-              <time title="创建时间：2019-04-24 15:22:49" itemprop="dateCreated datePublished" datetime="2019-04-24T15:22:49+08:00">2019-04-24</time>
+              <time title="创建时间：2019-05-22 16:15:59" itemprop="dateCreated datePublished" datetime="2019-05-22T16:15:59+08:00">2019-05-22</time>
             </span>
           
 
@@ -431,8 +435,8 @@
                 </span>
             
                 <span class="post-meta-item-text">评论数：</span>
-                <a href="/2019/04/24/5/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2019/04/24/5/" itemprop="commentCount"></span>
+                <a href="/8.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/8.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -454,7 +458,7 @@
               
                 <span class="post-meta-item-text">本文字数：</span>
               
-              <span title="本文字数">2.4k</span>
+              <span title="本文字数">2.6k</span>
             </span>
           
 
@@ -466,7 +470,7 @@
               
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
               
-              <span title="阅读时长">3 分钟</span>
+              <span title="阅读时长">4 分钟</span>
             </span>
           
 
@@ -485,31 +489,53 @@
       
 
       
-        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    抽象工厂模式是指提供一系列相互依赖或者相关的接口，无需指定他们具体的类。客户端（应用层）不依赖于产品实例如何被创建的细节。强调的是一系列相关的产品对象一起使用创建对象需要大量重复的代码，需要提供一个产品类的库。所以的产品以同样的接口出现，从而使客户端不依赖于具体的实现。</p>
-<h5 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h5><h5 id="1-1-场景"><a href="#1-1-场景" class="headerlink" title="1.1 场景"></a>1.1 场景</h5><p>​    有一个支付场景，要支付宝支付和微信支付，支付宝支付和微信支付都可以聊天，都可以借钱（假设）。</p>
-<h5 id="1-2-步骤"><a href="#1-2-步骤" class="headerlink" title="1.2 步骤"></a>1.2 步骤</h5><p>（1） 创建抽象的聊天和借钱的接口，提供抽象的聊天和借钱的方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ITalk</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>​    门面模式又叫外观模式，它提供了一个同意的接口，用来对访问子系统中的多个接口。它的主要特性是定义了一个高层的接口，让子系统更容易调用，是属于一种结构型的设计模式。</p>
+<h5 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h5><p> 1.通用的写法，这里创建三个子系统和和一个门面系统，门面系统提供三个方法分别调用子系统的方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SubSystemA</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doA</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"do a"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">ILend</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">lend</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SubSystemB</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doB</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"do b"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>（2） 创建支付的抽象 工厂类，提供公开的初始化方法，提供抽象的创造聊天和支付的方法，返回值是抽象的聊天和借钱。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> <span class="title">PayFactory</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"初始化数据"</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">abstract</span> ITalk <span class="title">createTalk</span><span class="params">()</span></span>;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">abstract</span> ILend <span class="title">createLend</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SubSystemC</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doC</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"do c"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AliPayTalk</span> <span class="keyword">implements</span> <span class="title">ITalk</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"支付宝聊天"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Facade</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> SubSystemA subSystemA = <span class="keyword">new</span> SubSystemA();</span><br><span class="line">    <span class="keyword">private</span> SubSystemB subSystemB = <span class="keyword">new</span> SubSystemB();</span><br><span class="line">    <span class="keyword">private</span> SubSystemC subSystemC = <span class="keyword">new</span> SubSystemC();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doA</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.subSystemA.doA();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doB</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.subSystemB.doB();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doC</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.subSystemC.doC();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WechatTalk</span> <span class="keyword">implements</span> <span class="title">ITalk</span> </span>&#123;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">talk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"微信可以聊天"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>2.写一个测试类，创建门面系统，然后调用方法。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Facade facade = <span class="keyword">new</span> Facade();</span><br><span class="line">        facade.doA();</span><br><span class="line">        facade.doB();</span><br><span class="line">        facade.doC();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WechatLend</span> <span class="keyword">implements</span> <span class="title">ILend</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">lend</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"微信可以借钱"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>3.查看结果。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200403105801413.jpg" alt></p>
+<p>4.类的结构图。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200403110106161.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3poYW50aWFubHVu,size_16,color_FFFFFF,t_70" alt></p>
+<h5 id="实际场景"><a href="#实际场景" class="headerlink" title="实际场景"></a>实际场景</h5><p>​    比如模拟一个商品积分兑换的场景，兑换一个商品需要三个步骤：1.确认用户的积分是否足够。2.完成支付流程。3.进入物流。这里就分别创建这三个系统（Service类），然后创建一个门面系统。然后在门面系统中分贝调用这三个子系统的服务。</p>
+<p>1.创建商品类。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 订单类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Order</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> name;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>（4） 创建阿里支付工厂和微信支付工厂，继承支付工厂接口，实现其抽象的方法。在方法中创建具体的聊天和借钱的实例。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AliPayFactory</span> <span class="keyword">extends</span> <span class="title">PayFactory</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ITalk <span class="title">createTalk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> AliPayTalk();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ILend <span class="title">createLend</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> AliPayLend();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 2.创建积分校验系统。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 积分校验系统</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">QulifyService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isAvilible</span><span class="params">(Order order)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"积分库积分校验通过，足够兑换物品"</span> + order.getName());</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">WechatPayFactory</span> <span class="keyword">extends</span> <span class="title">PayFactory</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ITalk <span class="title">createTalk</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> WechatTalk();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> ILend <span class="title">createLend</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.init();</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> WechatLend();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 3.创建支付系统。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 支付系统</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PayService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">pay</span><span class="params">(Order order)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"兑换商品"</span> + order.getName() + <span class="string">"成功，积分已被扣除"</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>（5） 在客户端创建支付宝支付和微信支付的工厂，调用工厂的创建聊天和借钱的接口创建具体的聊天和借钱的实例，最后调用聊天和借钱的方法。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.gupao.vip.pay.abstractfactory;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        AliPayFactory aliPayFactory = <span class="keyword">new</span> AliPayFactory();</span><br><span class="line">        aliPayFactory.createTalk().talk();</span><br><span class="line">        aliPayFactory.createLend().lend();</span><br><span class="line"></span><br><span class="line">        System.out.println(<span class="string">"---------"</span>);</span><br><span class="line"></span><br><span class="line">        WechatPayFactory wechatPayFactory = <span class="keyword">new</span> WechatPayFactory();</span><br><span class="line">        wechatPayFactory.createTalk().talk();</span><br><span class="line">        wechatPayFactory.createLend().lend();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>4.创建物流系统。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 物流系统</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DeliveryService</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">delivery</span><span class="params">(Order order)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"进入物流系统，商品已在快递中..."</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"666"</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>​    不知道大家有没有发现，如果在上面的代码中，需要给阿里支付和微信支付添加额外的功能，则需要改变抽象工厂和具体工厂的代码。这样就违背的软件设计的开闭原则。所以抽象工厂模式也是有缺点的。第一，产品族需要扩展功能很麻烦，需要修改抽象接口的代码。第二，创建的抽象类多，增加了系统的抽象性和理解难度。</p>
+<p>5.创建门面系统。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">OrderFacadeService</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> QulifyService qulifyService = <span class="keyword">new</span> QulifyService();</span><br><span class="line">    <span class="keyword">private</span> PayService payService = <span class="keyword">new</span> PayService();</span><br><span class="line">    <span class="keyword">private</span> DeliveryService deliveryService = <span class="keyword">new</span> DeliveryService();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">exchange</span><span class="params">(Order order)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (qulifyService.isAvilible(order)) &#123;</span><br><span class="line">            <span class="keyword">if</span> (payService.pay(order)) &#123;</span><br><span class="line">                String deliveryNo = deliveryService.delivery(order);</span><br><span class="line">                System.out.println(<span class="string">"下单成功，物流单号为："</span> + deliveryNo);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 6.测试调用。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Order order = <span class="keyword">new</span> Order();</span><br><span class="line">        order.setName(<span class="string">"《Java 技术核心卷2》"</span>);</span><br><span class="line"></span><br><span class="line">        OrderFacadeService orderFacadeService = <span class="keyword">new</span> OrderFacadeService();</span><br><span class="line">        orderFacadeService.exchange(order);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>7.查看结果。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200403111025138.jpg" alt></p>
+<h5 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h5><p>1.门面模式的优点：</p>
+<p>   （1）简化了调用的过程，无需深入的了解子系统，以防给子系统带来风险。</p>
+<p>   （2）减少系统依赖，降低耦合。</p>
+<p>   （3）更好的划分了访问的层次，提高了安全性。</p>
+<p>   （4）遵循迪米特法则，即最少知道原则。</p>
+<p>2.门面模式的缺点：</p>
+<p>   （1）当子系统的功能需要扩展时，门面系统也需要进行扩展。容易带来未知的风险。</p>
+<p>   （2）不符合开闭原则。</p>
+<p>   （3）某些情况下可能违背单一职责原则。</p>
 
       
     </div>
@@ -549,7 +575,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://zhantianlun.github.io/2019/04/24/5/" title="【设计模式】工厂模式之抽象工厂模式">https://zhantianlun.github.io/2019/04/24/5/</a>
+    <a href="https://zhantianlun.com/8.html" title="【设计模式】门面模式">https://zhantianlun.com/8.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -578,8 +604,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/04/22/4/" rel="next" title="【设计模式】工厂模式之工厂方法模式">
-                <i class="fa fa-chevron-left"></i> 【设计模式】工厂模式之工厂方法模式
+              <a href="/7.html" rel="next" title="【设计模式】代理模式">
+                <i class="fa fa-chevron-left"></i> 【设计模式】代理模式
               </a>
             
           </div>
@@ -588,8 +614,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/05/02/6/" rel="prev" title="【设计模式】单例模式">
-                【设计模式】单例模式 <i class="fa fa-chevron-right"></i>
+              <a href="/9.html" rel="prev" title="【设计模式】装饰器模式">
+                【设计模式】装饰器模式 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -754,7 +780,7 @@
             <div class="links-of-blogroll motion-element links-of-blogroll-block">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                Links
+                友链
               </div>
               <ul class="links-of-blogroll-list">
                 
@@ -781,7 +807,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#举例"><span class="nav-number">2.</span> <span class="nav-text">举例</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-1-场景"><span class="nav-number">3.</span> <span class="nav-text">1.1 场景</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#1-2-步骤"><span class="nav-number">4.</span> <span class="nav-text">1.2 步骤</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#代码"><span class="nav-number">2.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#实际场景"><span class="nav-number">3.</span> <span class="nav-text">实际场景</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
@@ -814,8 +840,6 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-      <span class="post-meta-item-text">站点总字数：</span>
-    
     <span title="站点总字数">68k</span>
   
 
@@ -824,8 +848,6 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    
-      <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     
     <span title="站点阅读时长">1:37</span>
   
