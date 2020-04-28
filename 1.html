@@ -95,20 +95,20 @@
 
 
 
-  <meta name="description" content="问题：​    java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357) java.lang.Incomp">
+  <meta name="description" content="问题java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357)">
 <meta name="keywords" content="Bug">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【Bug】maven如何排除依赖">
 <meta property="og:url" content="https://zhantianlun.com/1.html">
 <meta property="og:site_name" content="成事在人">
-<meta property="og:description" content="问题：​    java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357) java.lang.Incomp">
+<meta property="og:description" content="问题java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357)">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190726102746100.jpg">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20190726102814362.jpg">
-<meta property="og:updated_time" content="2020-04-22T06:32:08.479Z">
+<meta property="og:updated_time" content="2020-04-28T08:58:49.181Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【Bug】maven如何排除依赖">
-<meta name="twitter:description" content="问题：​    java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357) java.lang.Incomp">
+<meta name="twitter:description" content="问题java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357)">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190726102746100.jpg">
 
 
@@ -488,13 +488,15 @@
       
 
       
-        <h5 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h5><p>​    java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357)</p>
+        <h5 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h5><p>java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357)</p>
+<a id="more"></a>
+
 <p>java.lang.IncompatibleClassChangeError: Found class org.objectweb.asm.MethodVisitor, but interface was expected at org.lilystudio.smarty4j.Template.toParser(Template.java:357) at org.lilystudio.smarty4j.Template.<init>(Template.java:134) at org.lilystudio.smarty4j.Template.<init>(Template.java:152) at org.lilystudio.smarty4j.Engine.getTemplate(Engine.java:317) at com.doit.framework.mvc.core.Doit.render(Doit.java:769) at com.doit.framework.mvc.core.Doit.forwardTo(Doit.java:711) at com.doit.framework.mvc.core.Doit.doPost(Doit.java:286) at com.doit.framework.mvc.core.Doit.doGet(Doit.java:83) at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at com.doit.framework.mvc.filter.FrameServletFilter.doFilter(FrameServletFilter.java:30) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at com.doit.framework.mvc.filter.SetCharacterEncodingFilter.doFilter(SetCharacterEncodingFilter.java:32) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137) at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660) at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798) at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808) at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498) at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) at java.lang.Thread.run(Thread.java:748)</init></init></p>
-<h5 id="分析："><a href="#分析：" class="headerlink" title="分析："></a>分析：</h5><p>​    这个错误便表示使用jar包文件的依赖冲突引起的，仔细查看jar包，会发现有同一个jar的版本冲突：</p>
+<h5 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h5><p>这个错误便表示使用jar包文件的依赖冲突引起的，仔细查看jar包，会发现有同一个jar的版本冲突：</p>
 <p><img src="https://img-blog.csdnimg.cn/20190726102746100.jpg" alt></p>
 <p><img src="https://img-blog.csdnimg.cn/20190726102814362.jpg" alt></p>
-<p>​    在引入neo4j的jar包中，也包含了对 asm-6.2.jar 的引用。</p>
-<h5 id="解决办法："><a href="#解决办法：" class="headerlink" title="解决办法："></a>解决办法：</h5><p>​    在neo4j的jar包中排除asm的依赖。  </p>
+<p>在引入neo4j的jar包中，也包含了对 asm-6.2.jar 的引用。</p>
+<h5 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h5><p>在neo4j的jar包中排除asm的依赖。  </p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.neo4j<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>neo4j<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.4.14<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- Exclude asm --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.ow2.asm<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>asm<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 
@@ -764,7 +766,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#问题："><span class="nav-number">1.</span> <span class="nav-text">问题：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分析："><span class="nav-number">2.</span> <span class="nav-text">分析：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#解决办法："><span class="nav-number">3.</span> <span class="nav-text">解决办法：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#分析"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#解决办法"><span class="nav-number">3.</span> <span class="nav-text">解决办法</span></a></li></ol></div>
             
 
           </div>

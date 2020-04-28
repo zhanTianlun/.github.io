@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://zhantianlun.com/1.html</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>  <url>
+    <loc>https://zhantianlun.com/2.html</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>  <url>
+    <loc>https://zhantianlun.com/3.html</loc>
+    <lastmod>2020-04-28</lastmod>
+  </url>  <url>
     <loc>https://zhantianlun.com/13.html</loc>
     <lastmod>2020-04-28</lastmod>
   </url>  <url>
@@ -8,12 +17,6 @@
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>https://zhantianlun.com/4.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
-    <loc>https://zhantianlun.com/3.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
-    <loc>https://zhantianlun.com/2.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>https://zhantianlun.com/10.html</loc>
@@ -35,9 +38,6 @@
     <lastmod>2020-04-22</lastmod>
   </url>  <url>
     <loc>https://zhantianlun.com/5.html</loc>
-    <lastmod>2020-04-22</lastmod>
-  </url>  <url>
-    <loc>https://zhantianlun.com/1.html</loc>
     <lastmod>2020-04-22</lastmod>
   </url>
 </urlset>
