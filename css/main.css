@@ -276,7 +276,7 @@ span.exturl {
   color: #333;
   text-decoration: none;
   outline: none;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #888;
   cursor: pointer;
 }
 a:hover,
@@ -306,7 +306,7 @@ hr {
 blockquote {
   margin: 0;
   padding: 0 15px;
-  color: #666;
+  color: #555;
   border-left: 4px solid #ddd;
 }
 blockquote cite::before {
@@ -386,7 +386,7 @@ kbd {
 .translation {
   margin-top: -20px;
   font-size: 14px;
-  color: #999;
+  color: #888;
 }
 .scrollbar-measure {
   width: 100px;
@@ -1339,7 +1339,7 @@ pre .javascript .function {
   margin: -20px auto 15px;
   text-align: center;
   font-size: 14px;
-  color: #999;
+  color: #888;
   font-weight: bold;
   line-height: 1;
 }
@@ -1507,7 +1507,7 @@ pre .javascript .function {
   transition-property: background;
 }
 .posts-collapse .post-header:hover {
-  border-bottom-color: #666;
+  border-bottom-color: #555;
 }
 .posts-collapse .post-header:hover::before {
   background: #222;
@@ -1533,7 +1533,7 @@ pre .javascript .function {
 }
 .posts-collapse .post-title a,
 .posts-collapse .post-title span.exturl {
-  color: #666;
+  color: #555;
   border-bottom: none;
 }
 .page-home .post-type-quote .post-header,
@@ -1580,7 +1580,7 @@ pre .javascript .function {
 }
 .posts-expand .post-meta {
   margin: 3px 0 60px 0;
-  color: #999;
+  color: #888;
   font-family: 'EB Garamond', "Noto Serif SC", "Long Cang", sans-serif;
   font-size: 12px;
   text-align: center;
@@ -1590,7 +1590,7 @@ pre .javascript .function {
   margin-top: 2px;
 }
 .posts-expand .post-meta time {
-  border-bottom: 1px dashed #999;
+  border-bottom: 1px dashed #888;
   cursor: help;
 }
 .post-meta-divider {
@@ -1745,7 +1745,7 @@ pre .javascript .function {
 }
 .sidebar a,
 .sidebar span.exturl {
-  color: #999;
+  color: #888;
   border-bottom-color: #333;
 }
 .sidebar a:hover,
@@ -1761,7 +1761,7 @@ pre .javascript .function {
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: #999;
+  color: #888;
   text-align: center;
 }
 .site-overview-wrap {
@@ -1803,7 +1803,7 @@ pre .javascript .function {
   margin-top: 0;
   text-align: center;
   font-size: 13px;
-  color: #999;
+  color: #888;
 }
 .links-of-author {
   margin-top: 20px;
@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #db1385;
+  background: #ffde41;
 }
 .feed-link,
 .chat {
@@ -1968,7 +1968,7 @@ pre .javascript .function {
 }
 .post-toc-empty {
   font-size: 14px;
-  color: #666;
+  color: #555;
 }
 .post-toc-wrap {
   overflow: hidden;
@@ -1991,7 +1991,7 @@ pre .javascript .function {
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
   transition-property: all;
-  color: #666;
+  color: #555;
   border-bottom-color: #ccc;
 }
 .post-toc ol a:hover {
@@ -2054,11 +2054,11 @@ pre .javascript .function {
 }
 .site-state-item-name {
   font-size: 13px;
-  color: #999;
+  color: #888;
 }
 .footer {
   font-size: 14px;
-  color: #999;
+  color: #888;
 }
 .footer img {
   border: none;

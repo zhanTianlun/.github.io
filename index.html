@@ -361,12 +361,253 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhantianlun.com/14.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="湛天伦">
+      <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
+      <meta itemprop="image" content="/images/me.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="宁静致远">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/14.html" class="post-title-link" itemprop="url">【设计模式】委派模式</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2020-05-07 10:22:00" itemprop="dateCreated datePublished" datetime="2020-05-07T10:22:00+08:00">2020-05-07</time>
+            </span>
+          
+
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">评论数：</span>
+                <a href="/14.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/14.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/14.html" class="post-meta-item leancloud_visitors" data-flag-title="【设计模式】委派模式">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读次数：</span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+
+          <br>
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span title="本文字数">1.6k</span>
+            </span>
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span title="阅读时长">2 分钟</span>
+            </span>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>委派模式又叫委托模式，是一种面向对象的设计模式，允许对象组合实现与继承相同的代码重用。它的基本作用就是负责任务的调用和分配任务，是一种特殊的静态代理，可以理解为全权代理，但是代理模式注重过程，而委派模式注重结果。委派模式属于行为型模式，不属于GOF23种设计模式中。</p>
+<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><ol>
+<li>创建一个抽象IEmployee接口，提供抽象doing方法。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">IEmployee</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">doing</span><span class="params">(String task)</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>创建员工employeeA类，继承Employee接口。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EmployeeA</span> <span class="keyword">implements</span> <span class="title">IEmployee</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">protected</span> String goodAt = <span class="string">"编程"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doing</span><span class="params">(String task)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"我是员工A，我擅长"</span> + goodAt + <span class="string">",现在开始做"</span> + task + <span class="string">"工作"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>创建员工employeeB类，继承Employee接口。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">EmployeeB</span> <span class="keyword">implements</span> <span class="title">IEmployee</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">protected</span> String goodAt = <span class="string">"平面设计"</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doing</span><span class="params">(String task)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"我是员工B，我擅长"</span> + goodAt + <span class="string">",现在开始做"</span> + task + <span class="string">"工作"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>创建经理类继承IEmplyee类，里面创建一个任务名作为value,Employee类作为key的map，然后在构造方法中，对map进行赋值。重写doing方法，在方法中调用具体Emplyee的doing方法。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.HashMap;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Leader</span> <span class="keyword">implements</span> <span class="title">IEmployee</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> Map&lt;String, IEmployee&gt; employee = <span class="keyword">new</span> HashMap&lt;String, IEmployee&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Leader</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        employee.put(<span class="string">"爬虫"</span>, <span class="keyword">new</span> EmployeeA());</span><br><span class="line">        employee.put(<span class="string">"海报图"</span>, <span class="keyword">new</span> EmployeeB());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doing</span><span class="params">(String task)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (!employee.containsKey(task)) &#123;</span><br><span class="line">            System.out.println(<span class="string">"这个任务"</span> + task + <span class="string">"超出我的能力范围"</span>);</span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        employee.get(task).doing(task);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>创建老板类，创建指挥的方法，在方法传入具体的任务和具体的经理，指挥经理去做对应的任务。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Boss</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">command</span><span class="params">(String task,Leader leader)</span></span>&#123;</span><br><span class="line">        leader.doing(task);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>测试代码。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Test</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">new</span> Boss().command(<span class="string">"海报图"</span>,<span class="keyword">new</span> Leader());</span><br><span class="line">        <span class="keyword">new</span> Boss().command(<span class="string">"爬虫"</span>,<span class="keyword">new</span> Leader());</span><br><span class="line">        <span class="keyword">new</span> Boss().command(<span class="string">"卖手机"</span>,<span class="keyword">new</span> Leader());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>查看结果。</li>
+</ol>
+<p><img src="http://q9fz8j5zv.bkt.clouddn.com/1588821686%281%29.jpg" alt></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+	
+    
+    
+
+    
+      
+    
+    
+
+   
+    
+      
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://zhantianlun.com/13.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -580,7 +821,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -797,7 +1038,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1012,7 +1253,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1226,7 +1467,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1440,7 +1681,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1655,7 +1896,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -1869,7 +2110,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2083,7 +2324,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="湛天伦">
       <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
+      <meta itemprop="image" content="/images/me.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -2277,220 +2518,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zhantianlun.com/4.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="湛天伦">
-      <meta itemprop="description" content="种一棵树最好的时间是十年前，其次是现在">
-      <meta itemprop="image" content="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="宁静致远">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/4.html" class="post-title-link" itemprop="url">【设计模式】工厂模式之工厂方法模式</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-04-22 14:17:13" itemprop="dateCreated datePublished" datetime="2019-04-22T14:17:13+08:00">2019-04-22</time>
-            </span>
-          
-
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Java/" itemprop="url" rel="index"><span itemprop="name">Java</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">评论数：</span>
-                <a href="/4.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/4.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-            <span id="/4.html" class="post-meta-item leancloud_visitors" data-flag-title="【设计模式】工厂模式之工厂方法模式">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读次数：</span>
-              
-                <span class="leancloud-visitors-count"></span>
-            </span>
-          
-
-          
-
-          
-
-          <br>
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-file-word-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">本文字数：</span>
-              
-              <span title="本文字数">1.9k</span>
-            </span>
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-clock-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              
-              <span title="阅读时长">3 分钟</span>
-            </span>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>工厂方法模式是指定义一个创建对象的接口，然后实现这个接口的工厂来决定创建什么样的实例。工厂方法让类的实例推迟到子类中进行。在这个模式中，只关心需要创建的是什么工厂，不需要关心创建的细节。而且新加入的产品符合开闭原则。</p>
-<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><h5 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h5><p>​    有一个支付场景，支付的方式有多种，微信支付，阿里支付，银联支付。如何实现工厂方法模式。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/4.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-	
-    
-    
-
-    
-      
-    
-    
-
-   
-    
-      
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2526,7 +2553,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg" alt="湛天伦">
+              <img class="site-author-image" itemprop="image" src="/images/me.jpg" alt="湛天伦">
             
               <p class="site-author-name" itemprop="name">湛天伦</p>
               <div class="site-description motion-element" itemprop="description">种一棵树最好的时间是十年前，其次是现在</div>
@@ -2539,7 +2566,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
