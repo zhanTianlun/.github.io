@@ -34,8 +34,8 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
+  small: /images/zhan16.png
+  medium: /images/zhan32.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
@@ -48,7 +48,6 @@ rss:
 footer:
   # Specify the date when the site was setup. If not defined, current year will be used.
   since: 2018
-
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/v4.7.0/icons/
@@ -77,10 +76,18 @@ footer:
   # Beian ICP information for Chinese users. See: http://www.beian.miit.gov.cn
   beian:
     enable: false
-    icp:
+    icp: 浙ICP备20014160号
     
   #ͳ��
   counter: true
+
+  ages:
+    # site running time
+    enable: true
+    # birthday of your site
+    birthday: 20180714
+    # color of number
+    color: "#1890ff"
 
 # Creative Commons 4.0 International License.
 # See: https://creativecommons.org/share-your-work/licensing-types-examples
@@ -140,7 +147,7 @@ yandex_site_verification:
 baidu_site_verification:
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.
-baidu_push: false
+baidu_push: true
 
 
 # ---------------------------------------------------------------
@@ -214,7 +221,7 @@ social_icons:
 
 # Blog rolls
 links_icon: link
-links_title: Links
+links_title: 友链
 links_layout: block
 #links_layout: inline
 links:
@@ -225,8 +232,8 @@ avatar:
   # In theme directory (source/images): /images/avatar.png
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  #url: /images/avatar.png
-  url: https://wx4.sinaimg.cn/mw690/81f87b78ly1ge0dvdyndhj20u01407wk.jpg
+  url: /images/me.jpg
+  # url: http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # If true, the avatar would be rotated with the cursor.
@@ -300,7 +307,7 @@ excerpt_description: true
 # Automatically Excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: true
+  enable: false
   length: 200
 
 # Read more button
@@ -351,8 +358,8 @@ reward:
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:
-  enable: false
-  title: # Custom header, leave empty to use the default one
+  enable: true
+  title: 相关文章推荐 # Custom header, leave empty to use the default one
   display_in_home: false
   params:
     maxCount: 5
@@ -434,10 +441,10 @@ tagcloud:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. //fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.loli.net
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -447,7 +454,12 @@ font:
   # Global font settings used for all elements in <body>.
   global:
     external: true
-    family: Monda
+    family: EB Garamond
+    size:
+
+  title:
+    external: true
+    family: Long Cang
     size:
 
   # Font settings for Headlines (H1, H2, H3, H4, H5, H6).
@@ -455,7 +467,7 @@ font:
   headings:
     external: true
     family: Roboto Slab
-    size:
+    size: 20
 
   # Font settings for posts.
   # Fallback to `global` font settings.
@@ -473,7 +485,7 @@ font:
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family: PT Mono
+    family: Roboto Mono
     size:
 
 
@@ -522,7 +534,7 @@ math:
 # Choose only one variant, do not need to install both.
 # To install 2.x: https://github.com/theme-next/theme-next-fancybox
 # To install 3.x: https://github.com/theme-next/theme-next-fancybox3
-fancybox: false
+fancybox: true
 
 # Polyfill to remove click delays on browsers with touch UIs.
 # Dependencies: https://github.com/theme-next/theme-next-fastclick
@@ -777,14 +789,14 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: # <app_id>
-  app_key: # <app_key>
+  enable: true
+  app_id: W9UnlI3UutLasFPUWMthrPHh-gzGzoHsz
+  app_key: EbjLs6oxWPcBnc3Bf4lj7da1
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
   # If you don't care about security in leancloud counter and just want to use it directly
   # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
-  security: true
-  betterPerformance: false
+  security: false
+  betterPerformance: true
 
 # Another tool to show number of visitors to each article.
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
@@ -1168,3 +1180,8 @@ vendors:
 css: css
 js: js
 images: images
+
+
+# 文章末尾添加"本文结束"标记
+passage_end_tag:
+  enabled: true

@@ -11,10 +11,10 @@ $gainsboro    = #eee
 $gray-lighter = #ddd
 $grey-light   = #ccc
 $grey         = #bbb
-$grey-dark    = #999
-$grey-dim     = #666
-$black-light  = #555
-$black-dim    = #333
+$grey-dark    = #888
+$grey-dim     = #555
+$black-light  = #333
+$black-dim    = #222
 $black-deep   = #222
 $red          = #ff2a2a
 $blue-bright  = #87daff
@@ -55,24 +55,23 @@ get_font_family(config) {
 }
 
 // Font families.
-$font-family-chinese      = "PingFang SC", "Microsoft YaHei"
+$font-family-chinese      = "Noto Serif SC" , "Long Cang"
 
-$font-family-base         = $font-family-chinese, sans-serif
+$font-family-base         = $font-family-chinese, sans-serif, cursive 
 $font-family-base         = get_font_family('global'), $font-family-chinese, sans-serif if get_font_family('global')
 
 $font-family-logo         = $font-family-base
 $font-family-logo         = get_font_family('logo'), $font-family-base if get_font_family('logo')
 
+$font-family-title        = "Long Cang"
 $font-family-headings     = $font-family-base
 $font-family-headings     = get_font_family('headings'), $font-family-base if get_font_family('headings')
 
 $font-family-posts        = $font-family-base
 $font-family-posts        = get_font_family('posts'), $font-family-base if get_font_family('posts')
 
-// $font-family-monospace    = consolas, Menlo, $font-family-chinese, monospace
-// $font-family-monospace    = get_font_family('codes'), consolas, Menlo, $font-family-chinese, monospace if get_font_family('codes')
-$font-family-monospace    = consolas, Menlo, $font-family-base, monospace
-$font-family-monospace    = get_font_family('codes'), consolas, Menlo, $font-family-base, monospace if get_font_family('codes')
+$font-family-monospace    = $font-family-chinese, monospace
+$font-family-monospace    = Menlo, Monaco, Consolas, get_font_family('codes'), $font-family-chinese, monospace if get_font_family('codes')
 
 $font-family-icons        = 'FontAwesome'
 
@@ -96,7 +95,7 @@ $font-size-larger         = $font-size-base + 4px
 
 // Headings font size
 $font-size-headings-step    = 2px
-$font-size-headings-base    = 24px
+$font-size-headings-base    = 20px
 $font-size-headings-base    = unit(hexo-config('font.headings.size'), px) if hexo-config('font.headings.size') is a 'unit'
 $font-size-headings-small   = $font-size-headings-base - $font-size-headings-step
 $font-size-headings-smaller = $font-size-headings-small - $font-size-headings-step

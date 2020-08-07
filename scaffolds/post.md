@@ -4,4 +4,5 @@ date: {{ date }}
 tags:
 categories:
 copyright: true
+related_posts: true
 ---
