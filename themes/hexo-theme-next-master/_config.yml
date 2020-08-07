@@ -232,8 +232,8 @@ avatar:
   # In theme directory (source/images): /images/avatar.png
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: /images/me.jpg
-  # url: http://q9fz8j5zv.bkt.clouddn.com/20200427183614.jpg
+  # url: /images/me.jpg
+  url: http://qny.zhantianlun.com/20200427183614.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # If true, the avatar would be rotated with the cursor.
